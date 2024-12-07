@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* text-style */
+.text-style{
+    letter-spacing: 3px;
+    font-style: italic;
+}
+/* unlist */
+.unlist{
+    list-style-type: disc;
+}
+/* opacity */
+.opacity{
+    opacity: .7;
+}
+/* home-section-banner */
+.home-section-banner{
+    height: 67vh;
+     background:linear-gradient(to right,#00000069,#0000005d) ,url(./assets/contruction-banner.png) no-repeat;
+     background-size:cover;
+}
+/* perfect-layout */
+.perfect-layout{
+   position: absolute;
+   top: 540px;
+}
+.perfect-box:hover{
+      background-color: #ffd23f !important;
+      transform: translateY(-10px);
+      transition: all 1s ease-in;
+}
+.perfect-box:hover .text-warning{
+    color: black !important;
+}
+/* home-introduction */
+.home-introduction{
+    margin-top: 20%;
+}
+.home-introduction .para{
+    font-size: 22px;
+}
+/* home-introduction */
+.home-introduction{
+    background:linear-gradient(to right,#ffffffe1,#ffffff,#ffffffe6) , url(./assets/home/silhouette-city-background-illustration-free-vector.jpg) center;
+}
+/* our-service */
+.our-service{
+    background: url(./assets/home/6.png);
+}
+/* our-home-service */
+.our-home-service:hover{
+     transform: scale(1.1);
+     transition: all 1s ease-in-out;
+     background:url(./assets/contruction-banner.png) bottom;
+}
+.our-home-service:hover ul li,.icon{
+    color: white;
+}
+/* about-banner */
+.about-banner{
+    height: 70vh;
+    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) ,url(./assets/about/about-banner.jpg) no-repeat center; 
+    background-size: cover;
+}
+.about-banner-content{
+    background-color: rgba(201, 201, 14, 0.429);
+}
+.about-intro{
+    background-image: url(./assets/about/bg-shape-04.png);
+}
+.about-senior-team .our-senior-about{
+     border: 1px solid #ccc;
+     position: relative;
+}
+.our-senior-about .senior-team{
+    margin:2px;
+    background: white;
+}
+.our-senior-about .senior-team::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background: #e3df05;
+    z-index: -2;
+}
+.our-senior-about .senior-team:hover::before{
+    bottom:0;
+    transition: all 1s ease-in-out;
+}
+.our-senior-about .senior-team:hover{
+    background: url(./assets/about/75d3bd6c2855cea6bd12af66cc37719b.gif) center;
+    background-size:cover;
+}
+/* contruction-banner */
+.contruction-banner{
+    height: 70vh;
+    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/building.jpg) center;
+}
+/* construction-intro */
+.construction-intro{
+    position: relative;
+    overflow: hidden;
+}
+.construction-intro .cons-intro{
+    margin: 3px;
+}
+.construction-intro .cons-intro::before{
+     content: "";
+     position: absolute;
+     top:230px;
+     bottom:0;
+     right:0    ;
+     left: 0;
+     background:yellow;
+     z-index: -2;
+    }
+    .cons-intro:hover::before{
+    transition: all 2s ease-in;
+    top:0;
+}
+/* our-works */
+.our-works{
+    position: relative;
+    overflow: hidden;
+}
+.our-works .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right:-290px;
+    background: #0000008e;
+    color: #e3df05;
+    display: grid;
+    place-items: center;
+}
+.our-works:hover .content{
+    right: 0;
+    transition: all 1s ease-in;
+}
+/* road-work-banner */
+.road-work-banner{
+    height: 70vh;
+    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/road-work/What-Is-Highway-Construction-1.jpg) no-repeat;
+    background-size: cover;
+}
+/* media */
+@media screen  and (max-width:700px){
+    .perfect-layout{
+         position: static;
+         top: 0;
+    }
+}
