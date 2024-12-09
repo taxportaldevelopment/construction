@@ -9,9 +9,22 @@ import ourWork4 from "../assets/our-work-4.jpeg";
 import { IoMdSettings } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
+import { useState } from "react";
+import Loading from "./layout/Loading";
 const Construction = () => {
+
+     const [loading,setLoading] = useState(false);
+
+     setTimeout(()=>{
+           setLoading(true)
+     },3000)
+
   return (
     <div>
+
+        {loading?
+        <div>
+
        <div className="contruction-banner d-flex justify-content-center align-items-center">
              <div>
                  <Link to={"/construction"} className="text-white fw-bold px-2 h5">Home </Link><span className="text-white fw-bold px-2">/</span>
@@ -201,7 +214,9 @@ const Construction = () => {
                     </div>
                </div> 
          </div>
-         
+         </div> :<Loading/>   
+        
+     }
     </div>
   )
 }

@@ -51,12 +51,15 @@ const Header = () => {
         <Link to={"/road-work"}>ROAD WORKS</Link>
       </NavItem>
       <NavItem>
-        <Link to={"/"}>Logistics</Link>
+        <Link to={"/logistics"}>Logistics</Link>
       </NavItem>
       <NavItem>
         <Link to={"/"}>Irrigation</Link>
       </NavItem>
     </DropDown>
+    <NavItem>
+      <Link to={"/readymixconcrete"}>Readymixconcrete</Link>
+    </NavItem>
     <NavItem>
       <Link to={"/"}>Contact</Link>
     </NavItem>
@@ -69,5 +72,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header

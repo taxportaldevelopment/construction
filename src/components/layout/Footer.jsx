@@ -7,7 +7,7 @@ import img1 from "../../assets/Construction-rafiki.png"
 const Footer = () => {
   return (
     <div>
-        <div className="footer-section container-fluid bg-dark px-5 py-3">
+        <div className="footer-section container-fluid px-5 py-3">
               <div className="row">
                   <div className="col-md-12 col-lg-6">
                        <p className='fw-bold text-warning'>BUILDING WORKS</p>

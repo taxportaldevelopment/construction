@@ -22,6 +22,151 @@
      background:linear-gradient(to right,#00000069,#0000005d) ,url(./assets/contruction-banner.png) no-repeat;
      background-size:cover;
 }
+/*  house-works start */
+.cart{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* background: #ff0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart .imgBx{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #f00;
+    border-radius: 15px;
+    background: url(./assets/home/house-1.jpeg)bottom;
+    background-size: cover;
+}
+.cart .imgBx::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+.cart .imgBx::after{
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left:0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+.cart .content{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #232949;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+}
+.cart .content .price{
+    position:absolute;
+    height:80px;
+    top:-80px;
+    width: 50%;
+    background:#232949;
+    border-top:10px solid #fff;
+    border-right:10px solid #fff;
+    border-top-right-radius: 25px;
+}
+.cart .content .price::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background:transparent;
+    border-radius: 50%;
+    box-shadow:-10px -10px 0 #fff;
+}
+.cart .content .price::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right:-25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow:-10px 10px 0 #232949;
+}
+
+/* second image */
+.cart .cart-image-change{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #f00;
+    border-radius: 15px;
+    background: url(./assets/home/house-2.jpeg)bottom;
+    background-size: cover;
+}
+.cart .cart-image-change::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+.cart .cart-image-change::after{
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left:0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+/* house-three */
+.cart .house-three{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #f00;
+    border-radius: 15px;
+    background: url(./assets/home/house-3.jpg)bottom;
+    background-size: cover;
+}
+.cart .house-three::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+.cart .house-three::after{
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left:0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+}
+/*  house-works end */
 /* perfect-layout */
 .perfect-layout{
    position: absolute;
@@ -145,16 +290,52 @@
     right: 0;
     transition: all 1s ease-in;
 }
+/* footer-section */
+.footer-section{
+    background:linear-gradient(to right,#1f1818e7,#141414f0) ,url(./assets/logistics/construction-site-truck.jpg) no-repeat center;
+    background-size: cover;
+}
 /* road-work-banner */
 .road-work-banner{
     height: 70vh;
     background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/road-work/What-Is-Highway-Construction-1.jpg) no-repeat;
     background-size: cover;
 }
+/* logistics-banner */  
+.logistics-banner{
+    height: 70vh;
+    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/logistics/logistics-banner.jpg) no-repeat center;
+    background-size: cover;
+}
+.logistics-banner-truck-road{
+    background: url(./assets/logistics/road-view.jpg) no-repeat center;
+    background-size: cover;
+}
+/* irrigation-banner */
+.irrigation-banner{
+    height: 70vh;
+
+}
+/* readymixconcrete-banner */
+.readymixconcrete-banner{
+    height: 70vh;
+    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) ,url(./assets/readymixconcrete/readymixconcrete-banner.png) no-repeat bottom;
+    background-size: cover;
+}
+.readymixconcrete-section .left-content{
+    position: absolute;
+    width: 600px;
+    top: 500px;
+}
 /* media */
 @media screen  and (max-width:700px){
     .perfect-layout{
          position: static;
          top: 0;
+    }
+    .readymixconcrete-section .left-content{
+        position:static;
+        width:100%;
+        top:100%;
     }
 }

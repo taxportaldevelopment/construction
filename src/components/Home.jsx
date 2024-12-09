@@ -10,6 +10,10 @@ import { FaRoad } from "react-icons/fa";
 import { FaBinoculars } from "react-icons/fa";
 import { FaBus } from "react-icons/fa";
 import { BsBuildingsFill } from "react-icons/bs";
+import { FaBuilding } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { GiTrophyCup } from "react-icons/gi";
 
 // counter
 import CountUp from 'react-countup';
@@ -20,7 +24,7 @@ const Home = () => {
 
     setTimeout(()=>{
           setLoading(true)
-    },7000)
+    },3000)
 
   return (
     <div>
@@ -197,27 +201,141 @@ const Home = () => {
 
                 </div>
         </div>
+
+         {/* house works */}
+         <div className="house-works container-fluid">
+            <h2 className='text-center py-2 text-warning text-style'>HOUSE PLANING</h2>
+          <div className="row d-flex justify-content-evenly">
+               <div className="col-md-12 col-lg-3 p-2">
+                   <div className="cart">
+                     <div className="imgBx"></div>
+        <div className="content">
+            <span className="price">
+                <h5 className='text-warning text-center'>House Works</h5>
+                <p  className='text-white px-1'><strong className='text-warning'>Price</strong> : ₹ 11,0000</p>
+            
+             </span>
+             <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
+              <div className="text-center">
+               <button className='btn btn-warning'>Book Now <MdArrowForwardIos className='text-white' /></button>
+              </div>
+             </div>
+                     </div>
+
+               </div>
+               <div className="col-md-12 col-lg-3 p-2">
+                   <div className="cart">
+                     <div className="imgBx cart-image-change"></div>
+              <div className="content">
+            <span className="price">
+                <h5 className='text-warning text-center'>House Works</h5>
+                <p  className='text-white px-1'><strong className='text-warning'>Price</strong> : ₹ 11,0000</p>
+            
+             </span>
+             <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
+              <div className="text-center">
+               <button className='btn btn-warning'>Book Now <MdArrowForwardIos className='text-white' /></button>
+              </div>
+             </div>
+                     </div>
+
+               </div>
+               <div className="col-md-12 col-lg-3 p-2">
+                   <div className="cart">
+                     <div className="imgBx house-three"></div>
+        <div className="content">
+            <span className="price">
+                <h5 className='text-warning text-center'>House Works</h5>
+                <p  className='text-white px-1'><strong className='text-warning'>Price</strong> : ₹ 11,0000</p>
+            
+             </span>
+             <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
+              <div className="text-center">
+               <button className='btn btn-warning'>Book Now <MdArrowForwardIos className='text-white' /></button>
+              </div>
+             </div>
+                     </div>
+
+               </div>
+          </div>
+         </div>
+
         {/* projects */}
-        <div className="projects">
-        <CountUp
-  start={-875.039}
-  end={160527.012}
-  duration={2.75}
-  separator=" "
-  decimals={4}
-  decimal=","
-//   prefix="EUR "
-//   suffix=" left"
-//   onEnd={() => console.log('Ended! 👏')}
-//   onStart={() => console.log('Started! 💨')}
->
-  {/* {({ countUpRef, start }) => (
-    <div>
-      <span ref={countUpRef} />
-      <button onClick={start}>Start</button>
-    </div>
-  )} */}
-      </CountUp>
+        <div className="projects bg-primary py-4 mt-4">
+         <div className="container">
+           <div className="row">
+               <div className="col-md-3 col-sm-4 col-xs-6">
+                   <div>
+                     <div className="d-flex justify-content-center">
+                        <FaBuilding className='text-warning h2' />
+                     </div>
+                     <div className='d-flex justify-content-center text-white'>
+                     <h2>
+            
+                     <CountUp
+                      end={100}
+                        enableScrollSpy={true}/>
+                     </h2>
+                   </div>
+                     <h6 className='text-white text-center'>No. Of Sites</h6>
+
+                   </div>
+               </div>
+               <div className="col-md-3 col-sm-4 col-xs-6">
+                   <div>
+                     <div className="d-flex justify-content-center  ">
+                        <GrProjects className='text-warning h2' />
+                     </div>
+                     <div className='d-flex justify-content-center text-white'>
+                     <h2>
+            
+                     <CountUp
+                      end={100}
+                        enableScrollSpy={true}/>
+                     </h2>
+                   </div>
+                     <h6 className='text-white text-center'>Project Completed</h6>
+
+                   </div>
+               </div>
+               <div className="col-md-3 col-sm-4 col-xs-6">
+                   <div>
+                     <div className="d-flex justify-content-center  ">
+                        <HiOutlineUserGroup className='text-warning h2' />
+                     </div>
+                     <div className='d-flex justify-content-center text-white'>
+                     <h2>
+            
+                     <CountUp
+                      end={100}
+                        enableScrollSpy={true}/>
+                     </h2>
+                   </div>
+                     <h6 className='text-white text-center'>Team Size</h6>
+
+                   </div>
+               </div>
+               <div className="col-md-3 col-sm-4 col-xs-6">
+                   <div>
+                     <div className="d-flex justify-content-center  ">
+                        <GiTrophyCup className='text-warning h2' />
+                     </div>
+                     <div className='d-flex justify-content-center text-white'>
+                     <h2>
+            
+                     <CountUp
+                      end={100}
+                        enableScrollSpy={true}/>
+                     </h2>
+                   </div>
+                     <h6 className='text-white text-center'>Aggregate Experience</h6>
+
+                   </div>
+               </div>
+           </div>
+
+            </div>
+
         </div>
     </div>:<Loading/>
       
