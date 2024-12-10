@@ -9,6 +9,8 @@ import RoadWork from "./components/RoadWork"
 import Logistics from "./components/Logistics"
 import Irrigation from "./components/Irrigation"
 import Readymixconcrete from "./components/Readymixconcrete"
+import Career from "./components/Career"
+import Contact from "./components/Contact"
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
                <Route path="/logistics"  element={<Logistics/>}/>
                <Route path="/irrigation" element={<Irrigation/>} />
                <Route path="/readymixconcrete" element={<Readymixconcrete/>} /> 
+               <Route path="/career" element={<Career/>} />
+               <Route path="/contact" element={<Contact/>} />
            </Routes>
            <Footer/>
        </div>

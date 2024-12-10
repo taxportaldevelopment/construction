@@ -12,7 +12,11 @@ import {
 import { FaPhone } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
+import { useState } from "react";
 const Header = () => {
+     const [active,setActive] = useState("construction")
+    console.log(active);
+    
   return (
     <div className="fw-bold sticky-top">
         <div className="header-contact d-flex justify-content-between py-2 px-3  bg-dark text-white">
@@ -32,42 +36,41 @@ const Header = () => {
   }}
 >
   <NavbarBrand>
-    <Link to={"/"} className="font-weight-bold" style={{ fontSize: "30px", fontWeight: "700" }}>
+    <Link to={"/construction"} onClick={()=>setActive("construction")} className="font-weight-bold" style={{ fontSize: "30px", fontWeight: "700" }}>
       LOGO
     </Link>
   </NavbarBrand>
   <NavbarContent>
     <NavItem>
-      <Link to={"/construction"}>Home</Link>
+      <Link to={"/construction"} onClick={()=>setActive("construction")} style={{color:(active == "construction"?"orangered":"black")}}>Home</Link>
     </NavItem>
     <NavItem>
-      <Link to={"/about"}>About</Link>
+      <Link  to={"/about"} onClick={()=>setActive("about")} style={{color:(active == "about"?"orangered":"black")}}>About</Link>
     </NavItem>
     <DropDown style={{ width: "250px" }} label="Services">
       <NavItem>
-        <Link to={"/construction-work"}>BUILDING CONTRUCTION</Link>
+        <Link to={"/construction-work"} onClick={()=>setActive("construction-work")} style={{color:(active == "construction-work"?"orangered":"black")}}>BUILDING CONTRUCTION</Link>
       </NavItem>
       <NavItem>
-        <Link to={"/road-work"}>ROAD WORKS</Link>
+        <Link to={"/road-work"} onClick={()=>setActive("road-work")} style={{color:(active == "road-work"?"orangered":"black")}} >ROAD WORKS</Link>
       </NavItem>
       <NavItem>
-        <Link to={"/logistics"}>Logistics</Link>
+        <Link onClick={()=>setActive("logistics")} to={"/logistics"} style={{color:(active == "logistics"?"orangered":"black")}} >Logistics</Link>
       </NavItem>
-      <NavItem>
+      {/* <NavItem>
         <Link to={"/"}>Irrigation</Link>
-      </NavItem>
+      </NavItem> */}
     </DropDown>
     <NavItem>
-      <Link to={"/readymixconcrete"}>Readymixconcrete</Link>
+      <Link onClick={()=>setActive("readymixconcrete")} to={"/readymixconcrete"} style={{color:(active == "readymixconcrete"?"orangered":"black")}} >Readymixconcrete</Link>
     </NavItem>
     <NavItem>
-      <Link to={"/"}>Contact</Link>
+      <Link  onClick={()=>setActive("career")} to={"/career"} style={{color:(active == "career"?"orangered":"black")}} >Career</Link>
+    </NavItem>
+    <NavItem>
+      <Link onClick={()=>setActive("contact")} to={"/contact"} style={{color:(active == "contact"?"orangered":"black")}} >Contact</Link>
     </NavItem>
   </NavbarContent>
-  <SideContent>
-    <SideItems>Sign In</SideItems>
-    <SideItems>Sign Up</SideItems>
-  </SideContent>
 </Navbar>
     </div>
   )

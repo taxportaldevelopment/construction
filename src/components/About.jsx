@@ -48,7 +48,7 @@ const About = () => {
         </div>
         {/* Our Senior Consultant's team profile */}
           <div className="about-senior-team container my-4">
-                <h2 className='py-4 text-center text-style text-warning'>Our Senior Consultant&apos;s team profile</h2>
+                <h2 className='py-4 text-center text-style text-warning brand-font'>Our Senior Consultant&apos;s team profile</h2>
 
                <div className="row">
                     <div className="col-md-6 col-lg-4 mt-4">
@@ -91,20 +91,25 @@ const About = () => {
                          </div>
                     </div>
                </div> 
-               <div className='p-4'>
-
-               <p className='text-style'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam esse 
-                fugiat vel nulla. Rerum, mollitia! Voluptatum in, error consectetur aspernatur quisquam sed 
-                corporis labore numquam quibusdam eveniet dolor, inventore velit debitis. Minima illum eos cum expedita.
-                 Ab sapiente quasi expedita alias molestiae dolorem quis quia, reiciendis aperiam, culpa et sed.</p>
-                 <p className='text-style'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam esse 
-                fugiat vel nulla. Rerum, mollitia! Voluptatum in, error <strong>consectetur</strong> aspernatur quisquam sed 
-                corporis labore numquam quibusdam eveniet dolor, inventore velit debitis. Minima illum eos cum expedita.
-                 Ab sapiente quasi expedita alias molestiae dolorem quis quia, reiciendis aperiam, culpa et sed.</p>
-                 <p className='text-style'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam esse 
-                fugiat vel nulla. Rerum, mollitia! Voluptatum in, error <strong>consectetur</strong> aspernatur quisquam sed 
-                corporis labore numquam quibusdam eveniet dolor, inventore velit debitis. Minima illum eos cum expedita.
-                 Ab sapiente quasi expedita alias molestiae dolorem quis quia, reiciendis aperiam, culpa et sed.</p>
+               <div className='p-4 text-style'>
+                    <p>
+                    Construction work refers to the process of building, altering, repairing, or demolishing
+                     structures and infrastructure. It involves a wide range of activities and tasks that can
+                      vary depending on the type of construction project. These tasks are typically carried out by 
+                      skilled professionals, such as carpenters, electricians, plumbers, engineers, architects, 
+                      and construction laborers. The work can be divided into several phases, including:</p>
+                      {/* list */}
+                      <ul>
+                         <li><strong>Planning and Design:</strong> This stage involves creating blueprints, obtaining permits, and setting budgets for the project.</li>
+                         <li><strong>Site Preparation:</strong> This includes clearing the land, excavating, and laying foundations.</li>
+                         <li><strong>Building and Construction:</strong> This is the core stage where the structure is built. It may involve framing, electrical work, plumbing, roofing, and other specialized trades.</li>
+                         <li><strong>Finishing:</strong> This includes tasks like painting, flooring, installing fixtures, and making final adjustments.</li>
+                         <li><strong>Inspection and Handover:</strong> Ensuring the structure meets safety and quality standards before being handed over to the owner or client.</li>
+                      </ul>
+                      <p>Construction work can apply to various types of projects, 
+                         including residential homes, commercial buildings, roads, 
+                         bridges, and industrial facilities. It often requires adherence 
+                         to safety standards, building codes, and environmental regulations.</p>
                </div>
           </div>
     </div>:<Loading/>
