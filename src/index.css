@@ -205,7 +205,8 @@
 .our-home-service:hover{
      transform: scale(1.1);
      transition: all 1s ease-in-out;
-     background:url(./assets/contruction-banner.png) bottom;
+     background:linear-gradient(to right,#1f181884,#2c232380) ,url(./assets/animation-gif.gif) bottom;
+     background-size: contain;
 }
 .our-home-service:hover ul li,.icon{
     color: white;
@@ -302,6 +303,12 @@
     background:linear-gradient(to right,#1f1818e7,#141414f0) ,url(./assets/logistics/construction-site-truck.jpg) no-repeat center;
     background-size: cover;
 }
+.fooetr-link .foot-media{
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 75%;
+}
 /* road-work-banner */
 .road-work-banner{
     height: 70vh;
@@ -341,11 +348,11 @@
     background-size: cover;
 }
 .career-section .border-style{
-    border: 4px dashed yellow;
+    box-shadow: rgba(223, 224, 225, 0.671) 0px 1px 2px 0px, rgba(237, 239, 240, 0.726) 0px 1px 3px 1px;
     border-radius:10px;
 }
 .career-section .career-more{
-    background-color: #0f172a;
+    background-color:#1b2021;
 }
 .career-parent-style{
     position: relative;
@@ -368,6 +375,20 @@
 .career-parent-style:hover p{
     color: white;
     font-weight: bold;
+}
+.career-form-parent{
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.career-form-group{
+     height: 35px;
+     border: none;
+     outline: none;
+     background-color: transparent;
+}
+.form-group input[type="checkbox"],input[type="radio"]{
+     height: 28px;
+     width: 28px;
 }
 /* contact-section */
 .contact-section{

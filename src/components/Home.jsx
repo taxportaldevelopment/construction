@@ -16,11 +16,24 @@ import { HiOutlineUserGroup } from "react-icons/hi";
 import { GiTrophyCup } from "react-icons/gi";
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { BiSolidBuildingHouse } from "react-icons/bi";
+import { BsEmojiSmile } from "react-icons/bs";
 // counter
 import CountUp from 'react-countup';
 import Loading from './layout/Loading';
+// images client
+import client1 from "../assets/our-client/client-1.png";
+import client2 from "../assets/our-client/client-2.png";
+import client3 from "../assets/our-client/client-3.png";
+import client4 from "../assets/our-client/client-4.png";
+import client5 from "../assets/our-client/client-5.png";
+import client6 from "../assets/our-client/client-6.png";
+import client7 from "../assets/our-client/client-7.png";
+import client8 from "../assets/our-client/client-8.png";
+import client9 from "../assets/our-client/client-9.png";
 const Home = () => {
-
+    const [ourClient,setOurClient] = useState([client1,client2,client3,client4,client5,client6,client7
+      ,client8,client9
+    ])
     const [loading,setLoading] = useState(false);
 
     setTimeout(()=>{
@@ -59,8 +72,6 @@ const Home = () => {
                                 apartments, and other types of residential buildings.</li>
                                 <li className='py-1'><strong>Commercial Construction:</strong> This involves the construction of office buildings, 
                                   shopping centers, schools, hospitals, and other commercial properties.</li>
-                              <li className='py-1'><strong>Industrial Construction:</strong> This focuses on constructing factories, 
-                              warehouses, power plants, and other industrial facilities.</li>    
                           </ul>
                    </div>
                    <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 border bg-white rounded">
@@ -70,9 +81,7 @@ const Home = () => {
                        <h5 className="text-center fw-bold">Key Phases of Construction</h5>
                           <ul>
                              <li className='py-2'><strong>Planning and Design:</strong> Involves site surveys, architectural design, and obtaining necessary permits.</li>
-                             <li className='py-2'><strong>Pre-Construction:</strong> Includes procurement of materials, hiring contractors, and organizing the construction team.</li>
-                             <li className='py-2'><strong>Post-Construction:</strong> Involves inspection, quality control, and finalizing paperwork, followed by the handover to the client.</li>
-                           
+                             <li className='py-2'><strong>Pre-Construction:</strong> Includes procurement of materials, hiring contractors, and organizing the construction team.</li>                           
                           </ul>
                    </div>
                    <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 border bg-white rounded">
@@ -84,7 +93,6 @@ const Home = () => {
                             <li className='py-1'><strong>Architects:</strong> Design the building and create the blueprints.</li>
                             <li className='py-1'><strong>Contractors:</strong> Manage day-to-day construction activities, ensuring work is completed on time and within budget.</li>
                              <li className='py-1'>Engineers: Oversee structural integrity, electrical systems, plumbing, and other technical aspects.</li>
-                             <li className='py-1'><strong>Laborers and Skilled Workers:</strong> These include electricians, plumbers, masons, carpenters, and general laborers who physically carry out the construction work.</li>
                          </ul>
                    </div>
               </div>
@@ -122,85 +130,90 @@ const Home = () => {
         </div>
         {/* our service */}
         <div className="our-service container">
-                <h2 className="text-center text-style">OUR SERVICE</h2>
-                <div className="p-4">
-              <div className="rows d-flex flex-wrap justify-content-evenly">
-                   <div className="border our-home-service rounded py-4 px-5">
-                    <div >
-                         <div className="icons d-flex">
-                             <div className="icon">
-                                <FaRoad className="h1" />
-                             </div> 
-                         <h4 className="ms-3 text-warning">ROAD WORKS</h4>
-                         </div>
-                    </div>
-                    <ul className="unlist">
-                        <li>Use Proper Signage and Barriers</li>
-                        <li>Wear High-Visibility Clothing</li>
-                        <li>Traffic Management Plan</li>
-                        <li>Stay Alert and Avoid Distractions</li>
-                    </ul>
-                       
-                   </div>
-                   <div className="border our-home-service rounded py-4 px-5">
-                    <div >
-                         <div className="icons d-flex">
-                             <div className="icon">
-                                <FaBinoculars className="h1" />
-                             </div> 
-                         <h4 className="ms-3 text-warning">IRRIGATION</h4>
-                         </div>
-                    </div>
-                    <ul className="unlist">
-                        <li>Ensuring consistent crop growth.</li>
-                        <li>Enhancing soil fertility and preventing dryness.</li>
-                        <li>Supporting farming in arid and semi-arid regions.</li>
-                        <li>Increasing food production and securing livelihoods.</li>
-                    </ul>
-                       
+                <h2 className="text-center text-style py-3">OUR SERVICE</h2>
+
+               <div className="row d-flex justify-content-evenly">
+                    <div className="col-md-12 col-lg-5">
+                    <div className="border our-home-service rounded py-4 px-5">
+              <div >
+                   <div className="icons d-flex">
+                       <div className="icon">
+                          <FaBus className="h1" />
+                       </div> 
+                   <h4 className="ms-3 text-warning text-uppercase">logistics</h4>
                    </div>
               </div>
-
-              <div className="rows d-flex flex-wrap justify-content-evenly mt-5">
-                   <div className="border our-home-service rounded py-4 px-5">
-                    <div >
-                         <div className="icons d-flex">
-                             <div className="icon">
-                                <FaBus className="h1" />
-                             </div> 
-                         <h4 className="ms-3 text-warning text-uppercase">logistics</h4>
-                         </div>
+              <ul className="unlist">
+                  <li>Ensures timely delivery of products.</li>
+                  <li>Reduces costs by optimizing processes.</li>
+                  <li>Enhances customer satisfaction through reliable service.</li>
+                  <li>Supports global trade by connecting markets and industries.</li>
+              </ul>
+                 
+             </div>
                     </div>
-                    <ul className="unlist">
-                        <li>Ensures timely delivery of products.</li>
-                        <li>Reduces costs by optimizing processes.</li>
-                        <li>Enhances customer satisfaction through reliable service.</li>
-                        <li>Supports global trade by connecting markets and industries.</li>
-                    </ul>
-                       
-                   </div>
-                   
-                   <div className="border our-home-service rounded py-4 px-5">
-                    <div >
-                         <div className="icons d-flex">
-                             <div className="icon">
-                                <BsBuildingsFill className="h1" />
-                             </div> 
-                         <h4 className="ms-3 text-warning text-uppercase">building construction</h4>
-                         </div>
-                    </div>
-                    <ul className="unlist">
-                        <li>Planning and Design</li>
-                        <li>Site Preparation</li>
-                        <li>Foundation Work</li>
-                        <li>Structural Construction</li>
-                        <li>Walls and Roofing</li>
-                    </ul>
-                       
+                    <div className="col-md-12 col-lg-5">
+                    <div className="border our-home-service rounded py-4 px-5">
+              <div >
+                   <div className="icons d-flex">
+                       <div className="icon">
+                          <BsBuildingsFill className="h1" />
+                       </div> 
+                   <h4 className="ms-3 text-warning text-uppercase">building construction</h4>
                    </div>
               </div>
-
-                </div>
+              <ul className="unlist">
+                  <li>Planning and Design</li>
+                  <li>Site Preparation</li>
+                  <li>Foundation Work</li>
+                  <li>Structural Construction</li>
+                  <li>Walls and Roofing</li><br />
+              </ul>
+                 
+             </div>
+                    </div>
+               </div>
+               {/* second row */}
+               <div className="row mt-3 d-flex justify-content-evenly">
+                   <div className="col-md-12 col-lg-5">
+                   <div className="border our-home-service rounded py-4 px-5">
+              <div >
+                   <div className="icons d-flex">
+                       <div className="icon">
+                          <FaRoad className="h1" />
+                       </div> 
+                   <h4 className="ms-3 text-warning">ROAD WORKS</h4>
+                   </div>
+              </div>
+              <ul className="unlist">
+                  <li>Use Proper Signage and Barriers</li>
+                  <li>Wear High-Visibility Clothing</li>
+                  <li>Traffic Management Plan</li>
+                  <li>Stay Alert and Avoid Distractions</li>
+              </ul>
+                 
+             </div>
+                   </div>
+                   <div className="col-md-12 col-lg-5">
+                   <div className="border our-home-service rounded py-4 px-5">
+              <div >
+                   <div className="icons d-flex">
+                       <div className="icon">
+                          <FaBinoculars className="h1" />
+                       </div> 
+                   <h4 className="ms-3 text-warning">IRRIGATION</h4>
+                   </div>
+              </div>
+              <ul className="unlist">
+                  <li>Ensuring consistent crop growth.</li>
+                  <li>Enhancing soil fertility and preventing dryness.</li>
+                  <li>Supporting farming in arid and semi-arid regions.</li>
+                  <li>Increasing food production and securing livelihoods.</li>
+              </ul>
+                 
+             </div>
+                   </div>
+               </div>
         </div>
 
          {/* house works */}
@@ -338,6 +351,20 @@ const Home = () => {
             </div>
 
         </div>
+        {/* our client */}
+        <div className="container">
+           <h1 className='py-3 text-center text-style text-warning brand-font'>OUR HAPPY CLIENT <BsEmojiSmile /></h1>
+        <div className="row our-client p-4">
+            {ourClient.map((items,index)=>(
+             <div className="col-md-6 col-lg-4 d-flex justify-content-center align-items-center" key={index}>
+                  <img src={items} height={100} className='p-3' alt="" />
+             </div>
+
+            ))}
+        </div>
+
+        </div>
+        
     </div>:<Loading/>
       
     }

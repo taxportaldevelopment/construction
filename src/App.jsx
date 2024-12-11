@@ -11,7 +11,8 @@ import Irrigation from "./components/Irrigation"
 import Readymixconcrete from "./components/Readymixconcrete"
 import Career from "./components/Career"
 import Contact from "./components/Contact"
-
+// icons
+import { FaWhatsapp } from "react-icons/fa";
 function App() {
 
 
@@ -31,6 +32,16 @@ function App() {
                <Route path="/contact" element={<Contact/>} />
            </Routes>
            <Footer/>
+
+           <div className="app-js-icons">
+                <div className="icon">
+                  <a className="text-white h4" href={`whatsapp:contact=837597839@s.whatsapp.com&message="I'd like to chat with you`}>
+                    <FaWhatsapp />
+                  </a>
+          
+                </div>
+           </div>
+
        </div>
   )
 }

@@ -166,9 +166,9 @@ const Logistics = () => {
         {/* truckGif */}
          <div className="logistics-banner-truck-road py-5">
         <marquee behavior="" scrollamount="30" direction="">
-             <img src={truckGif} height={200} alt="" />
-             <img src={truckGif} height={200} alt="" />
-             <img src={truckGif} height={200} alt="" />
+             <img src={truckGif} className="ms-5" height={200} alt="" />
+             <img src={truckGif} className="ms-5" height={200} alt="" />
+             <img src={truckGif} className="ms-5" height={200} alt="" />
         </marquee>
 
          </div>
