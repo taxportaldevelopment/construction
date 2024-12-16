@@ -8,7 +8,7 @@ import Construction from "./components/Construction"
 import RoadWork from "./components/RoadWork"
 import Logistics from "./components/Logistics"
 import Irrigation from "./components/Irrigation"
-import Readymixconcrete from "./components/Readymixconcrete"
+// import Readymixconcrete from "./components/Readymixconcrete"
 import Career from "./components/Career"
 import Contact from "./components/Contact"
 // icons
@@ -27,7 +27,7 @@ function App() {
                <Route path="/road-work"  element={<RoadWork/>} />
                <Route path="/logistics"  element={<Logistics/>}/>
                <Route path="/irrigation" element={<Irrigation/>} />
-               <Route path="/readymixconcrete" element={<Readymixconcrete/>} /> 
+               {/* <Route path="/readymixconcrete" element={<Readymixconcrete/>} />  */}
                <Route path="/career" element={<Career/>} />
                <Route path="/contact" element={<Contact/>} />
            </Routes>
