@@ -17,6 +17,7 @@ import { GiTrophyCup } from "react-icons/gi";
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { BiSolidBuildingHouse } from "react-icons/bi";
 import { BsEmojiSmile } from "react-icons/bs";
+import { FaHandPointRight } from "react-icons/fa";
 // counter
 import CountUp from 'react-countup';
 import Loading from './layout/Loading';
@@ -47,10 +48,13 @@ const Home = () => {
       {loading?
     <div >
         <div className="home-section-banner d-flex justify-content-center text-white fw-bold align-items-center">
-              <div className="h2 text-warning brand-font">
+
+                <div>
+                  <h1><i>SRI PERUMAL ENTERPRISES</i></h1>
+              <div className="h2 text-warning brand-font d-flex justify-content-center align-items-center">
               <Typewriter
           options={{
-            strings: ['BUILDING CONTRUCTION', " ROAD WORKS",'Logistics', ' Irrigation'],
+            strings: ['CIVIL', "MECHANICAL",'ELECTRICAL ENGINEERING', 'CONTRACTOR',"CMWSS BOARD "],
             autoStart: true,
             loop: true,
             delay: 75, // Typing speed
@@ -58,6 +62,8 @@ const Home = () => {
           
         />
               </div>
+
+                </div>
         </div>
         {/* perfect-layout */}
         <div className="container-fluid perfect-layout w-100 p-3">
@@ -143,11 +149,11 @@ const Home = () => {
                    <h4 className="ms-3 text-warning text-uppercase">logistics</h4>
                    </div>
               </div>
-              <ul className="unlist">
-                  <li>Ensures timely delivery of products.</li>
-                  <li>Reduces costs by optimizing processes.</li>
-                  <li>Enhances customer satisfaction through reliable service.</li>
-                  <li>Supports global trade by connecting markets and industries.</li>
+              <ul type="none">
+                  <li><FaHandPointRight className='me-1' /> Ensures timely delivery of products.</li>
+                  <li><FaHandPointRight className='me-1' /> Reduces costs by optimizing processes.</li>
+                  <li><FaHandPointRight className='me-1' /> Enhances customer satisfaction through reliable service.</li>
+                  <li><FaHandPointRight className='me-1' /> Supports global trade by connecting markets and industries.</li>
               </ul>
                  
              </div>
@@ -162,12 +168,12 @@ const Home = () => {
                    <h4 className="ms-3 text-warning text-uppercase">building construction</h4>
                    </div>
               </div>
-              <ul className="unlist">
-                  <li>Planning and Design</li>
-                  <li>Site Preparation</li>
-                  <li>Foundation Work</li>
-                  <li>Structural Construction</li>
-                  <li>Walls and Roofing</li><br />
+              <ul>
+                  <li><FaHandPointRight className='me-1' /> Planning and Design</li>
+                  <li><FaHandPointRight className='me-1' /> Site Preparation</li>
+                  <li><FaHandPointRight className='me-1' /> Foundation Work</li>
+                  <li><FaHandPointRight className='me-1' /> Structural Construction</li>
+                  <li><FaHandPointRight className='me-1' /> Walls and Roofing</li><br />
               </ul>
                  
              </div>
@@ -185,13 +191,13 @@ const Home = () => {
                    <h4 className="ms-3 text-warning">ROAD WORKS</h4>
                    </div>
               </div>
-              <ul className="unlist">
-                  <li>Use Proper Signage and Barriers</li>
-                  <li>Wear High-Visibility Clothing</li>
-                  <li>Traffic Management Plan</li>
-                  <li>Stay Alert and Avoid Distractions</li>
+              <ul>
+                  <li><FaHandPointRight className='me-1' /> Use Proper Signage and Barriers</li>
+                  <li><FaHandPointRight className='me-1' /> Wear High-Visibility Clothing</li>
+                  <li><FaHandPointRight className='me-1' /> Traffic Management Plan</li>
+                  <li><FaHandPointRight className='me-1' /> Stay Alert and Avoid Distractions</li>
               </ul>
-                 
+                 <br />
              </div>
                    </div>
                    <div className="col-md-12 col-lg-5">
@@ -204,11 +210,11 @@ const Home = () => {
                    <h4 className="ms-3 text-warning">IRRIGATION</h4>
                    </div>
               </div>
-              <ul className="unlist">
-                  <li>Ensuring consistent crop growth.</li>
-                  <li>Enhancing soil fertility and preventing dryness.</li>
-                  <li>Supporting farming in arid and semi-arid regions.</li>
-                  <li>Increasing food production and securing livelihoods.</li>
+              <ul>
+                  <li><FaHandPointRight className='me-1' /> Ensuring consistent crop growth.</li>
+                  <li><FaHandPointRight className='me-1' /> Enhancing soil fertility and preventing dryness.</li>
+                  <li><FaHandPointRight className='me-1' /> Supporting farming in arid and semi-arid regions.</li>
+                  <li><FaHandPointRight className='me-1' /> Increasing food production and securing livelihoods.</li>
               </ul>
                  
              </div>

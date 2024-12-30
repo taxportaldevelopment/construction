@@ -312,19 +312,10 @@
 /* road-work-banner */
 .road-work-banner{
     height: 70vh;
-    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/road-work/What-Is-Highway-Construction-1.jpg) no-repeat;
+    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/road-work/What-Is-Highway-Construction-1.jpg) no-repeat center;
     background-size: cover;
 }
-/* logistics-banner */  
-.logistics-banner{
-    height: 70vh;
-    background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/logistics/logistics-banner.jpg) no-repeat center;
-    background-size: cover;
-}
-.logistics-banner-truck-road{
-    background: url(./assets/logistics/road-view.jpg) no-repeat center;
-    background-size: cover;
-}
+
 /* irrigation-banner */
 .irrigation-banner{
     height: 70vh;

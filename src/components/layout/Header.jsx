@@ -12,6 +12,9 @@ import {
 import { FaPhone } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
+import { MdOutlineMail } from "react-icons/md";
+// image
+import logo from "../../assets/logo.png";
 import { useState } from "react";
 const Header = () => {
      const [active,setActive] = useState("construction")
@@ -21,11 +24,17 @@ const Header = () => {
     <div className="fw-bold sticky-top">
         <div className="header-contact d-flex justify-content-between py-2 px-3  bg-dark text-white">
               <div>
-                  <h5><FaPhone /> 91+ 37586356979</h5>
+                   <div>
+                       <a href="tel:+91 9940025556" className="text-white "><h6><FaPhone /> +91 7359273084</h6></a>
+                      <a href="mailto:pandiyanp313@gmail.com" className="text-white ms-lg-3"><h6><MdOutlineMail /> sriperumalenterprises19@gmail.com</h6></a>
+                      <marquee behavior="" direction="right">
+                      <strong>Office Address :</strong> <span className="brand-font">No.67 C-Block Ezhil Nagar Perumbakkam Pin : Chennai 600100</span></marquee>
+                   </div>
+
               </div>
-              <div>
-                 <h6 className="d-inline h4 p-2"><FaFacebookF /></h6>
-                 <h6 className="d-inline h4 p-2"><LiaLinkedinIn /></h6>
+              <div className="d-flex justify-content-between">
+                 <h6 className=" h4 p-1"><FaFacebookF /></h6>
+                 <h6 className=" h4 p-1"><LiaLinkedinIn /></h6>
               </div>
         </div>
       <Navbar
@@ -37,7 +46,7 @@ const Header = () => {
 >
   <NavbarBrand>
     <Link to={"/construction"} onClick={()=>setActive("construction")} className="font-weight-bold" style={{ fontSize: "30px", fontWeight: "700" }}>
-      LOGO
+       <img src={logo} height={60} alt="" />
     </Link>
   </NavbarBrand>
   <NavbarContent>
@@ -55,7 +64,7 @@ const Header = () => {
         <Link to={"/road-work"} onClick={()=>setActive("road-work")} style={{color:(active == "road-work"?"orangered":"black")}} >ROAD WORKS</Link>
       </NavItem>
       <NavItem>
-        <Link onClick={()=>setActive("logistics")} to={"/logistics"} style={{color:(active == "logistics"?"orangered":"black")}} >Logistics</Link>
+        <Link onClick={()=>setActive("mechanical")} to={"/mechanical"} style={{color:(active == "mechanical"?"orangered":"black")}} >Mechanical</Link>
       </NavItem>
       {/* <NavItem>
         <Link to={"/"}>Irrigation</Link>

@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom"
 // image
-import image1 from "../assets/logistics/img-1.jpg"
-import image2 from "../assets/logistics/img-2.jpg"
-import image3 from "../assets/logistics/img-3.jpg"
-import image4 from "../assets/logistics/img-4.jpg"
-import truckGif from "../assets/logistics/truck.gif"
+import image1 from "../assets/logistics/mechanical/image-1.jpg"
+import image2 from "../assets/logistics/mechanical/image-2.jpg"
+import image3 from "../assets/logistics/mechanical/image-3.jpg"
+import image4 from "../assets/logistics/mechanical/image-4.jpg"
+import truckGif from "../assets/logistics/mechanical-set.gif"
 // icons
 import { IoSettingsOutline } from "react-icons/io5"; 
 import { useState } from "react"
@@ -145,7 +145,7 @@ const Logistics = () => {
                   </div>
              </div>
         </div>
-        <div className="container">
+        <div className="container py-3">
         <div className="row">
                   <div className="col-md-12 col-lg-6">
                       <h2 className="text-style text-warning">Lorem ipsum dolor sit amet.</h2>
@@ -159,19 +159,11 @@ const Logistics = () => {
                          ad assumenda exercitationem doloribus dicta.</p>
                   </div>
                   <div className="col-md-12 col-lg-6">
-                       <img src={image4} className="w-100 p-3 rounded" alt="" />
+                       <img src={truckGif} className="w-100 p-3 rounded" alt="" />
                   </div>
              </div>
         </div>
-        {/* truckGif */}
-         <div className="logistics-banner-truck-road py-5">
-        <marquee behavior="" scrollamount="30" direction="">
-             <img src={truckGif} className="ms-5" height={200} alt="" />
-             <img src={truckGif} className="ms-5" height={200} alt="" />
-             <img src={truckGif} className="ms-5" height={200} alt="" />
-        </marquee>
 
-         </div>
          </div>:<Loading/>   
        
      }

@@ -13,15 +13,15 @@ const Footer = () => {
         <div className="footer-section container-fluid px-3 px-lg-5 py-3 text-white">
               <div className="container">
                <div className="row">
-                     <div className="col-md-12 col-lg-3 opacity">
+                     <div className="col-md-12 col-lg-4 opacity">
                            <h5 className="py-3 border-bottom opacity text-style">ABOUT US</h5>
-                           <p className="opacity">Welcome to [Your Company Name], your trusted partner in construction. 
+                           <p className="opacity">Welcome to P.PANDIAN, your trusted partner in construction. 
                               With over [X] years of experience, we specialize in delivering high-quality 
                               construction services for residential, commercial, and industrial projects. 
                               Our mission is to provide exceptional craftsmanship, innovative solutions, and a c
                               ommitment to safety and sustainability.</p>
                      </div>
-                     <div className="col-md-12 col-lg-3 opacity">
+                     <div className="col-md-12 col-lg-4 opacity">
                            <h5 className="py-3 opacity border-bottom text-style">OUR SERVICE</h5>
                            <ul>
                                <li><MdKeyboardArrowRight /> Construction Work</li>
@@ -31,24 +31,14 @@ const Footer = () => {
 
                            </ul>
                      </div>
-                     <div className="col-md-12 col-lg-3 opacity">
+                     <div className="col-md-12 col-lg-4 opacity">
                           <h5 className="py-3 border-bottom text-style">HEAD OFFICE</h5>
                           <span><IoLocationOutline className="h4" /></span>
-                          <p>1st Floor, Duraisamy Complex, 2/3, Velachery 
-                              Bypass Rd, Natesan Nagar, Balaji Nagar, Velachery, 
-                              Chennai, Tamil Nadu 600042</p>
-                          <p><IoIosCall  className="px-1 h2"/> +91 9853797937</p>    
-                          <p><MdOutlineMail className="px-1 h2" /> google123@gmail.com</p>
+                          <p>No.67 C-Block Ezhil Nagar Perumbakkam Pin : Chennai 600100</p>
+                          <p><IoIosCall  className="px-1 h2"/>+ 91 44 3140 2500</p>    
+                          <p><MdOutlineMail className="px-1 h2" /> pandiyanp313@gmail.com</p>
                      </div>
-                     <div className="col-md-12 col-lg-3 opacity">
-                          <h5 className="py-3 border-bottom text-style">BRANCH OFFICE</h5>
-                          <span><IoLocationOutline className="h4" /></span>
-                          <p>1st Floor, Duraisamy Complex, 2/3, Velachery 
-                              Bypass Rd, Natesan Nagar, Balaji Nagar, Velachery, 
-                              Chennai, Tamil Nadu 600042</p>
-                              <p><IoIosCall  className="px-1 h2"/> +91 9853797937</p>    
-                              <p><MdOutlineMail className="px-1 h2" /> google123@gmail.com</p>    
-                     </div>
+
                </div>
                  <div className="details border-top p-2">
                      <div className="row">
