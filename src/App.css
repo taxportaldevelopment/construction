@@ -88,3 +88,11 @@
     align-items: center;
     border-radius: 75%;
 }
+/* civil-banner-section */
+.civil-banner-section{
+  height: 70vh;
+    background:url(./assets/civil-contruction.png);
+}
+.shadows:hover{
+  box-shadow: #0787c4 0px 3px 5px;
+}

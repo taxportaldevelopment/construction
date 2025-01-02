@@ -18,12 +18,15 @@ const About = () => {
             loading?
     <div>
         <div className="about-banner d-flex align-items-center p-4">
-            <div className="about-banner-content p-3">
-                   <marquee behavior="alternate" direction="top"> <q className='text-white'><h2 className='text-white'>CONSTRUCTION WORK</h2></q> </marquee>
-                  <p className='text-warning fw-bold text-center'>___Lorem ipsum dolor sit amet.___</p>
-                  <p className='text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe minus,<br /> ullam rem quis expedita similique accusamus explicabo? Asperiores,<br /> labore et.</p>
-                  <p className='text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe minus,<br /> ullam rem quis expedita similique accusamus explicabo? Asperiores,<br /> labore et.</p>
-            </div>
+            <div className=" p-3 container-fluid">
+                   <div className="row">
+                       <div className="col-md-12 col-lg-5 about-banner-content rounded p-2">
+                       <marquee behavior="alternate" direction="top"> <q className='text-white'><h5 className='text-white brand-font'>PANDIAN CONTRACTOR SERVICE</h5></q> </marquee>
+                  <p className='text-white p-2'>&quot;Hello, I am Pandian, a professional contractor with extensive experience in delivering exceptional construction and project management services. My expertise spans residential, commercial, and infrastructure projects, where I focus on quality, efficiency, and customer satisfaction. With a strong team and modern tools, I ensure every project is executed on time and within budget.</p>
+
+                       </div>
+                   </div>
+             </div>
         </div>
         {/* about intro */}
         <div className="about-intro">

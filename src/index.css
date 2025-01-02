@@ -4,6 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+.disc{
+    list-style:lower-roman;
+}
+:root{
+    --primary-color: #0787c4;
+    --secondary-color:#0a518e;
+    --three-color:#031e3b;
+}
+.font-size{
+    font-size: 11px;
+}
+.text-text{
+    color: var(--primary-color);
+}
+.inner-text{
+    color: var(--three-color);
+}
+.text-color{
+    color: var(--secondary-color);
+}
+.bramd-bg{
+    background-color: var(--primary-color);
+}
 .brand-font{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -179,16 +202,15 @@
    top: 540px;
 }
 .perfect-box:hover{
-      background-color: #ffd23f !important;
       transform: translateY(-10px);
       transition: all 1s ease-in;
 }
-.perfect-box:hover .text-warning{
-    color: black !important;
+.perfect-box:hover .text-warning-yes{
+    color: var(--primary-color);
 }
 /* home-introduction */
 .home-introduction{
-    margin-top: 27%;
+    margin-top: 25%;
 }
 .home-introduction .para{
     font-size: 22px;
@@ -200,17 +222,22 @@
 /* our-service */
 .our-service{
     background: url(./assets/home/6.png);
+    
 }
 /* our-home-service */
+.our-home-service{
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(31, 79, 184, 0.03) 0px 1px 1px -0.5px, rgba(34, 92, 215, 0.04) 0px 2px 2px -1px, rgba(19, 84, 225, 0.356) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+
+}
 .our-home-service:hover{
      transform: scale(1.1);
      transition: all 1s ease-in-out;
-     background:linear-gradient(to right,#1f181884,#2c232380) ,url(./assets/animation-gif.gif) bottom;
-     background-size: contain;
+     /* background:linear-gradient(to right,#151111c8,#131010d8) ,url(./assets/animation-gif.gif) bottom;
+     background-size: contain; */
 }
-.our-home-service:hover ul li,.icon{
+/* .our-home-service:hover ul li,.icon{
     color: white;
-}
+} */
 /* about-banner */
 .about-banner{
     height: 70vh;
@@ -257,9 +284,18 @@
     background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) , url(./assets/building.jpg) center;
 }
 /* construction-intro */
+.construction-intro-section {
+     height: 47vh;
+     overflow-y: hidden;
+}
+.construction-intro:hover{
+    transform: translateY(-30px);
+    transition: all 1s ease-in-out;
+}
 .construction-intro{
     position: relative;
     overflow: hidden;
+    transform: translateY(170px);
 }
 .construction-intro .cons-intro{
     margin: 3px;
@@ -271,12 +307,19 @@
      bottom:0;
      right:0    ;
      left: 0;
-     background:yellow;
+     background:var(--primary-color);
      z-index: -2;
     }
     .cons-intro:hover::before{
     transition: all 2s ease-in;
     top:0;
+    transform: translateY(-100px);
+}
+.cons-intro:hover .cons-intro-icon{
+     color: var(--primary-color);
+}
+.cons-intro:hover h5{
+    color: var(--primary-color);
 }
 /* our-works */
 .our-works{
@@ -413,5 +456,11 @@
          background-size:auto;
          background-position-x:-1380px;
          
+    }
+    .construction-intro-section{
+        height: auto;
+    }
+    .construction-intro{
+        transform: translateY(0);
     }
 }
