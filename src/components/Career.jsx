@@ -81,19 +81,16 @@ const Career = () => {
                                      <img src={icons1} height={50} alt="" />
                                 </div>
                                 <div className="right-side ms-2 p-3">
-                                     <span className="fw-bold opacity ">Quantity Surveyor | Boson Infra India Pvt. ltd.</span>
+                                     <span className="fw-bold opacity ">Quantity Surveyor | Sri Perumal Enterprises India Pvt. ltd.</span>
                                 </div>
                                  </div>
                                  <div className="job-details px-3">
                                      <span className="opacity" ><FaBriefcase className="h4 p-1 " /> Full Time</span><br />
                                      <span className="opacity" ><IoLocationSharp className="h4 p-1 " />Chennai</span><br />
                                      <span className="opacity" ><FaRegCalendarAlt className="h4 p-1 " />Posted 7 years ago</span><br />
-                                     <p>Boson Infra is currently seeking to hire Sr. 
+                                     <p className="py-2">Boson Infra is currently seeking to hire Sr. 
                                         Quantity Surveyor (Civil) to be based at Chennai. 
                                         The Quantity Surveyor will...</p>
-                                         <div className="d-flex justify-content-center align-items-center">
-                                           <button className="btn btn-success my-1">Read More</button>
-                                         </div>
                                  </div>
                            </div>
                      </div>
@@ -104,19 +101,16 @@ const Career = () => {
                                      <img src={icons2} height={50} alt="" />
                                 </div>
                                 <div className="right-side ms-2 p-3">
-                                     <span className="fw-bold opacity">Site Engineer | Boson Infra India Pvt. ltd.</span>
+                                     <span className="fw-bold opacity">Site Engineer | Sri Perumal Enterprises India Pvt. ltd.</span>
                                 </div>
                                  </div>
                                  <div className="job-details px-3">
                                      <span className="opacity"><FaBriefcase className="h4 p-1" /> Full Time</span><br />
                                      <span className="opacity"><IoLocationSharp className="h4 p-1" />Chennai</span><br />
                                      <span className="opacity"><FaRegCalendarAlt className="h4 p-1" />Posted 7 years ago</span><br />
-                                     <p>Diploma / B.E – civil engineers needed with good 
+                                     <p className="py-2">Diploma / B.E – civil engineers needed with good 
                                         relevant experience in Construction & Real Estate. 
                                         Particularly in Roads Work...</p>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                           <button className="btn btn-success my-1">Read More</button>
-                                         </div>
                                  </div>
                            </div>
                      </div>
@@ -127,19 +121,16 @@ const Career = () => {
                                      <img src={icons3} height={50} alt="" />
                                 </div>
                                 <div className="right-side ms-2 p-3">
-                                     <span className="fw-bold opacity">Electrician | Boson Infra India Pvt. ltd.</span>
+                                     <span className="fw-bold opacity">Electrician | Sri Perumal Enterprises India Pvt. ltd.</span>
                                 </div>
                                  </div>
                                  <div className="job-details px-3">
                                      <span className="opacity"><FaBriefcase className="h4 p-1" /> Full Time</span><br />
                                      <span className="opacity"><IoLocationSharp className="h4 p-1" />Chennai</span><br />
                                      <span className="opacity"><FaRegCalendarAlt className="h4 p-1" />Posted 7 years ago</span><br />
-                                     <p>We would like to hire an Electrician to join our team. 
+                                     <p className="py-2">We would like to hire an Electrician to join our team. 
                                         You will be responsible for installing and 
                                             repairing complex...</p>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                           <button className="btn btn-success my-1">Read More</button>
-                                         </div>
                                  </div>
                            </div>
                      </div>
@@ -150,19 +141,16 @@ const Career = () => {
                                      <img src={icons4} height={50} alt="" />
                                 </div>
                                 <div className="right-side ms-2 p-3">
-                                     <span className="fw-bold opacity">Electrician | Boson Infra India Pvt. ltd.</span>
+                                     <span className="fw-bold opacity">Electrician | Sri Perumal Enterprises India Pvt. ltd.</span>
                                 </div>
                                  </div>
                                  <div className="job-details px-3">
                                      <span className="opacity"><FaBriefcase className="h4 p-1" /> Full Time</span><br />
                                      <span className="opacity"><IoLocationSharp className="h4 p-1" />Chennai</span><br />
                                      <span className="opacity"><FaRegCalendarAlt className="h4 p-1" />Posted 7 years ago</span><br />
-                                     <p>We would like to hire an Electrician to join our team. 
+                                     <p className="py-2">We would like to hire an Electrician to join our team. 
                                         You will be responsible for installing and 
                                             repairing complex...</p>
-                                        <div className="d-flex justify-content-center align-items-center">
-                                           <button className="btn btn-success my-1">Read More</button>
-                                         </div>
                                  </div>
                            </div>
                      </div>
@@ -180,30 +168,30 @@ const Career = () => {
                          <div className="row">
                              <div className="col-md-12 col-lg-6 p-3 ">
                                     <img src={gifimg} className="w-100  rounded" alt="" />
-                                    <h1 className="text-style text-warning">DON'T NEVER GIVE UP !!</h1>
+                                    <h1 className="text-style text-warning">DON&apos;T NEVER GIVE UP !!</h1>
                               </div>
                               <div className="col-md-12 col-lg-6 p-3">
                                     <div className="form text-white">
                                           <form>
                                               <div className="form-group">
-                                                    <label htmlFor="username" className="opacity py-2">Enter Your Name *</label>
+                                                    <label htmlFor="username" className="opacity py-2 fw-bold">Enter Your Name *</label>
                                                     <div className="d-flex p-2 career-form-parent">
                                                         <input type="text" id="username" placeholder="Name...." className="ps-2 career-form-group w-100" />
-                                                         <CiUser className="h3 text-white" />
+                                                         <CiUser className="h3 text-color" />
                                                     </div>
                                               </div>
                                               <div className="form-group">
-                                                    <label htmlFor="emailname" className="opacity py-2">Enter Your Email *</label>
+                                                    <label htmlFor="emailname" className="opacity py-2 fw-bold">Enter Your Email *</label>
                                                     <div className="d-flex p-2 career-form-parent">
                                                         <input type="email" id="emailname" placeholder="Email...." className="ps-2 career-form-group w-100" />
-                                                         <MdOutlineAttachEmail className="h3 text-white" />
+                                                         <MdOutlineAttachEmail className="h3 text-color" />
                                                     </div>
                                               </div>
                                               <div className="form-group">
-                                                    <label htmlFor="emailname" className="opacity py-2">Enter Your Location *</label>
+                                                    <label htmlFor="emailname" className="opacity py-2 fw-bold">Enter Your Location *</label>
                                                     <div className="d-flex p-2 career-form-parent">
                                                         <input type="text" id="location" placeholder="Location...." className="ps-2 career-form-group w-100" />
-                                                         <MdOutlineMyLocation className="h3 text-white" />
+                                                         <MdOutlineMyLocation className="h3 text-color" />
                                                     </div>
                                               </div>
                                               <div className="form-group">
@@ -253,7 +241,7 @@ const Career = () => {
                                                    </div>
                                               </div>
                                               <div className="form-group py-3">
-                                                   <label htmlFor="Department" className="py-2">Department</label>
+                                                   <label htmlFor="Department" className="py-2 fw-bold">Department</label>
                                                    <div className="child-round">
                                                          <div className="d-flex">
                                                              <input type="radio" name="work" id="" />
@@ -266,11 +254,11 @@ const Career = () => {
                                                    </div>
                                               </div>
                                               <div className="form-group">
-                                                    <label htmlFor="resume" className="opacity py-2">Your File</label>
+                                                    <label htmlFor="resume" className="opacity py-2 fw-bold">Your File</label>
                                                     <input type="file" className="form-control" />
                                               </div>
                                               <div className="form-group my-2">
-                                                   <textarea className="form-control p-2" placeholder="Message...." name="" id="" cols="30" rows="6"></textarea>
+                                                   <textarea className="form-control p-2 fw-bold" placeholder="Message...." name="" id="" cols="30" rows="6"></textarea>
                                               </div>
                                               <div className="form-group">
                                                    <button className="btn btn-primary w-100 my-2">SEND MESSAGE</button>

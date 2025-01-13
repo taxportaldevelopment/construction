@@ -13,6 +13,9 @@ import Career from "./components/Career"
 import Contact from "./components/Contact"
 // icons
 import { FaWhatsapp } from "react-icons/fa";
+import Electrical from "./components/Electrical"
+import MetroWater from "./components/MetroWater"
+import Contractore from "./components/Contractore"
 function App() {
 
 
@@ -24,6 +27,9 @@ function App() {
                <Route path="/construction"  element={<Home/>} />
                <Route path="/about"  element={<About/>} />
                <Route path="/construction-work"  element={<Construction/>} />
+               <Route path="/electrical"  element={<Electrical/>} /> 
+               <Route path="/metrowater"  element={<MetroWater/>}/>
+               <Route path="/contractor"  element={<Contractore/>}/>
                {/* <Route path="/road-work"  element={<RoadWork/>} /> */}
                <Route path="/mechanical"  element={<Logistics/>}/>
                <Route path="/irrigation" element={<Irrigation/>} />

@@ -95,4 +95,138 @@
 }
 .shadows:hover{
   box-shadow: #0787c4 0px 3px 5px;
+  background: #000;
+  color: #fff;
+}
+/* electrical-section */
+.electrical-section{
+  height: 70vh;
+  background:linear-gradient(to right,#00000058,#00000052),url(./assets/electrical/electrical-banner.png);
+  background-size: cover;
+}
+.triangle-left{
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 50px solid #0787c4;
+  border-bottom: 25px solid transparent;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 50px solid #0787c4;
+  border-bottom: 25px solid transparent;
+}
+.electrical-sec .content-details{
+  background: url(./assets/electrical/transform.gif) no-repeat center;
+  background-size: cover;
+}
+/* electric-points */
+.electric-points{ 
+  background:linear-gradient(to right,#000000db,#000000ec,#000000c3),url(./assets/electrical/elec-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.electrical-sec .gallery-img{
+  padding: 5px;
+   overflow: hidden;
+  }
+  .electrical-sec .gallery-img img:hover{
+  transition: all 1s ease-in-out;
+    transform:rotateX(360deg) scale(1.2);
+}
+/* metrowater */
+.metrowater{
+   height: 70vh;
+   background:linear-gradient(to right,#000000a1,#000000ab),url(./assets/water/water-banner.png) no-repeat;
+   background-size: cover;
+}
+/* contractor-banner */
+.contractor-banner{
+  height: 70vh;
+  background:linear-gradient(to right,#000000a1,#000000ab),url(./assets/contractor/contractor-banner.png) no-repeat;
+  background-size: cover;
+}
+/* button style */
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+  .triangle-left{
+    border-top: 20px solid transparent;
+    border-right: 20px solid #0787c4;
+    border-bottom: 20px solid transparent;
+  }
+  .triangle-right{
+    border-top: 20px solid transparent;
+    border-left: 20px solid #0787c4;
+    border-bottom: 20px solid transparent;
+  }
+  
 }

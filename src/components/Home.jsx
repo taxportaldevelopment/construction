@@ -21,6 +21,7 @@ import { BiSolidBuildingHouse } from "react-icons/bi";
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaHandPointRight } from "react-icons/fa";
 import { CiCircleChevRight } from "react-icons/ci";
+import { IoIosArrowRoundForward } from "react-icons/io";
 // counter
 import CountUp from 'react-countup';
 import Loading from './layout/Loading';
@@ -72,6 +73,7 @@ const Home = () => {
     },1000)
     
 
+
   return (
     <div>
 
@@ -81,10 +83,10 @@ const Home = () => {
 
                 <div>
                   <h1><i>SRI PERUMAL ENTERPRISES</i></h1>
-              <div className="h2 brand-font d-flex justify-content-center align-items-center">
+              <div className="h2 brand-font d-flex justify-content-center text-text align-items-center">
               <Typewriter
           options={{
-            strings: ['CIVIL', "MECHANICAL",'ELECTRICAL ENGINEERING', 'CONTRACTOR',"CMWSS BOARD "],
+            strings: ['CIVIL', "MECHANICAL ENGINEERING",'ELECTRICAL ENGINEERING', 'CONTRACTOR',"CMWSS BOARD "],
             autoStart: true,
             loop: true,
             delay: 75, // Typing speed
@@ -95,37 +97,41 @@ const Home = () => {
 
                 </div>
         </div>
+        <div className='theme-one'>
         {/* perfect-layout */}
         <div className="container-fluid perfect-layout w-100 p-3">
               <div className="row  d-flex justify-content-evenly ">
-                   <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 border bg-white rounded">
+                   <div className="col-md-12 col-lg-3 perfect-box mt-2 bg-light border rounded">
+                         <div className="p-1 perfect-layout-child p-2">
                        <div className="icons d-flex justify-content-center">
                            <BsBuildings className="h1 text-warning-yes" />
                        </div>
-                       <h5 className="text-center fw-bold">Types of Construction Work</h5>
+                       <p className="text-center fw-bold text-text">Types of Construction Work</p>
                           <ul>
-                              <li className='py-1'><strong>Residential Construction</strong>: This includes building homes, 
+                              <li className='py-1'><strong className='opacity'>Residential Construction</strong>: This includes building homes, 
                                 apartments, and other types of residential buildings.</li>
-                                <li className='py-1'><strong>Commercial Construction:</strong> This involves the construction of office buildings, 
+                                <li className='py-1'><strong className='opacity'>Commercial Construction:</strong> This involves the construction of office buildings, 
                                   shopping centers, schools, hospitals, and other commercial properties.</li>
                           </ul>
+
+                         </div>
                    </div>
-                   <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 border bg-white rounded">
+                   <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 bg-light border rounded">
                        <div className="icons d-flex justify-content-center">
                            <HiMiniBuildingOffice className="h1 text-warning-yes" />
                        </div>
-                       <h5 className="text-center fw-bold">Key Phases of Construction</h5>
-                          <ul>
+                       <p className="text-center fw-bold text-text">Key Phases of Construction</p>
+                          <ul className='opacity'>
                              <li className='py-2'><strong>Planning and Design:</strong> Involves site surveys, architectural design, and obtaining necessary permits.</li>
                              <li className='py-2'><strong>Pre-Construction:</strong> Includes procurement of materials, hiring contractors, and organizing the construction team.</li>                           
                           </ul>
                    </div>
-                   <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 border bg-white rounded">
+                   <div className="col-md-12 col-lg-3 perfect-box mt-2 p-3 bg-light border rounded">
                        <div className="icons d-flex justify-content-center">
                            <BiSolidBuildingHouse className="h1 text-warning-yes" />
                        </div>
-                       <h5 className="text-center fw-bold">Key Roles in Construction Work</h5>
-                         <ul>
+                       <p className="text-center fw-bold text-text">Key Roles in Construction Work</p>
+                         <ul className='opacity'>
                             <li className='py-1'><strong>Architects:</strong> Design the building and create the blueprints.</li>
                             <li className='py-1'><strong>Contractors:</strong> Manage day-to-day construction activities, ensuring work is completed on time and within budget.</li>
                              <li className='py-1'>Engineers: Oversee structural integrity, electrical systems, plumbing, and other technical aspects.</li>
@@ -135,25 +141,25 @@ const Home = () => {
         </div>
         {/* home-intro */}
         <div className="home-introduction container-fluid p-3">
+                 <h1 className="para text-color text-center py-4">Welcome to <span className="fw-bold brand-font">Pandian India Private Limited</span></h1>
               <div className="container">
               <div className="row">
                  <div className="col-md-12 col-lg-6">
-                 <p className="para text-color">Welcome to <span className="fw-bold brand-font">Pandian India Private Limited</span></p>
                       <div>
                          <img src={Construction} className="w-75 rounded" alt="" />
                       </div>
                  </div>
                  <div className="col-md-12 col-lg-6">
-                             <p className='inner-text'><strong><i>Pandian Contractor</i></strong> specializes in delivering high-quality contracting services with a focus on precision, efficiency, and customer satisfaction. With years of expertise, Pandian Contractor ensures that every project, big or small, is executed with professionalism and dedication.</p>       
-                          <button className="btn btn-warning px-5 text-white">Build <MdArrowForwardIos /></button>
+                             <p className='inner-text'>Pandian Contractor specializes in delivering high-quality contracting services with a focus on precision, efficiency, and customer satisfaction. With years of expertise, Pandian Contractor ensures that every project, big or small, is executed with professionalism and dedication.</p>       
 
                           <div className='py-3 inner-text'>
-                              <ul className="unlist">
-                                 <li><strong>Construction Excellence:</strong> Expertise in residential, commercial, and infrastructure projects, ensuring timely delivery and adherence to quality standards.</li>
-                                 <li><strong>Client-Centric Approach:</strong> Tailored solutions to meet the specific needs of clients, ensuring transparency and trust throughout the project lifecycle.</li>
-                                 <li><strong>Innovative Techniques:</strong> Utilization of modern tools and sustainable practices to deliver cost-effective and durable solutions.</li>
+                              <ul>
+                                 <li><span className='text-text fw-bold'>Construction Excellence :</span> Expertise in residential, commercial, and infrastructure projects, ensuring timely delivery and adherence to quality standards.</li>
+                                 <li><span className='text-text fw-bold'>Client-Centric Approach :</span> Tailored solutions to meet the specific needs of clients, ensuring transparency and trust throughout the project lifecycle.</li>
+                                 <li><span className='text-text fw-bold'>Innovative Techniques : </span> Utilization of modern tools and sustainable practices to deliver cost-effective and durable solutions.</li>
                               </ul>
                           </div>
+                          <button className="button-85" role="button">Get Start <IoIosArrowRoundForward /></button>
                     </div>
               </div>
 
@@ -270,7 +276,7 @@ const Home = () => {
         </div>
 
          {/* house works */}
-         <div className="house-works container-fluid">
+         <div className="house-works my-5 py-5 container-fluid">
             <h2 className='text-center py-4 text-color text-style'>HOUSE PLANING</h2>
           <div className="row d-flex justify-content-evenly">
                <div className="col-md-12 col-lg-3 p-2">
@@ -284,7 +290,7 @@ const Home = () => {
              </span>
              <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
               <div className="text-center">
-               <button className='btn btn-warning'>Book Now <MdArrowForwardIos className='text-white' /></button>
+               <button className="button-85" role="button">Book Now <MdArrowForwardIos className='text-white' /></button>
               </div>
              </div>
                      </div>
@@ -301,7 +307,7 @@ const Home = () => {
              </span>
              <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
               <div className="text-center">
-               <button className='btn btn-warning'>Book Now <MdArrowForwardIos className='text-white' /></button>
+               <button className="button-85" role="button">Book Now <MdArrowForwardIos className='text-white' /></button>
               </div>
              </div>
                      </div>
@@ -318,7 +324,7 @@ const Home = () => {
              </span>
              <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
               <div className="text-center">
-               <button className='btn btn-warning'>Book Now <MdArrowForwardIos className='text-white' /></button>
+                 <button className="button-85" role="button">Book Now <MdArrowForwardIos className='text-white' /></button>
               </div>
              </div>
                      </div>
@@ -417,11 +423,13 @@ const Home = () => {
         </div>
 
         </div>
-               <div className="highway container p-3">
+               <div className='bg-dark'>
+
+               <div className="highway text-white container p-3">
                    <div className="row"> 
                         <div className="col-md-12 col-lg-6">
                              <h2 className="text-center text-color brand-font">Road and Highway <br /> Construction</h2>
-                                 <p>Roadworks refer to any kind of activity or project 
+                                 <p className='text-white'>Roadworks refer to any kind of activity or project 
                                   aimed at constructing, upgrading, maintaining, or repairing 
                                   road infrastructure. Roadworks may involve several stages, each 
                                   tailored to specific needs such as resurfacing, widening, or 
@@ -430,40 +438,33 @@ const Home = () => {
                                   typical roadwork project:</p>
 
         <div>
-                         <h3>Planning and Design</h3>
+                         <h4 className='brand-font'>Planning and Design</h4>
             <ul>
                 <li><CiCircleChevRight className='me-2'/>Surveying the area to determine existing road conditions and required improvements.</li>
                 <li><CiCircleChevRight className='me-2'/>Designing road layouts, traffic management plans, and environmental considerations.</li>
                 <li><CiCircleChevRight className='me-2'/>Permitting to ensure the work is legal and aligns with local policies and regulations.</li>
             </ul>
             <div>
-                <h3>Preparation and Mobilization</h3>
+                <h4 className='brand-font'>Preparation and Mobilization</h4>
                 <ul>
                 <li><CiCircleChevRight className='me-2'/>Traffic Diversion: Temporary road closures or detours are established to ensure safety and minimize disruption.</li>
                 <li><CiCircleChevRight className='me-2'/>Equipment and Materials: Heavy machinery like bulldozers, excavators, and rollers are mobilized. Materials like asphalt, concrete, and road signs are brought to the site.</li>
             </ul>
             </div>
             <div>
-                 <h3>Excavation and Earthworks</h3>
+                 <h4 className='brand-font'>Excavation and Earthworks</h4>
                   <ul>
                   <li><CiCircleChevRight className='me-2'/>The existing road may be dug up, and earthworks are carried out to clear the path or adjust the road’s level.</li>
                 <li><CiCircleChevRight className='me-2'/>Drainage systems might be installed to prevent water accumulation, which could degrade the road surface over time.</li>
 
                   </ul>
             </div>
-            <div>
-                 <h3>Surface Preparation and Paving</h3>
-                 <ul>
-                <li><CiCircleChevRight className='me-2'/>Subgrade stabilization ensures the base layer is strong enough for heavy traffic.</li>
-                <li><CiCircleChevRight className='me-2'/>Asphalt or Concrete Layer: A new layer of asphalt is laid down, or concrete is poured to create the road surface.</li>
-            </ul>
-            </div>
      </div> 
                         </div>
                         <div className="col-md-12 col-lg-6">
                             <img src={roadwork} className="p-4 w-100" alt="" />
                         <div>
-                          <h3>Signage and Safety Features</h3>
+                          <h4 className='brand-font'>Signage and Safety Features</h4>
                              <ul>
                                 <li>Road markings such as lanes and crosswalks are painted.</li>
                                 <li>Traffic signs are placed to direct traffic, warn of hazards, or indicate speed limits.</li>
@@ -471,22 +472,19 @@ const Home = () => {
                              </ul>
                         </div>
                         <div>
-                             <h3>Finishing Touches and Cleanup</h3>
+                             <h4 className='brand-font'>Finishing Touches and Cleanup</h4>
                               <ul>
                                  <li>Surface smoothing is done for a final check on the quality of the road.</li>
                                  <li>Cleanup ensures that debris and excess materials are cleared from the site, and the road is ready for use.</li>
                                  <li>Final inspection to ensure that the work meets all legal and safety standards.</li>
                               </ul>
                         </div>
-                        <div>
-                            <h3>Ongoing Maintenance</h3>
-                            <p>Roads require regular upkeep to remain in good condition. This can include tasks like resurfacing, fixing potholes, and updating signs as necessary.</p>
-                        </div>
                         </div>
                    </div>
                </div>
+               </div>
                {/* slider-image-carousel */}
-                 <div className="container-fluid bramd-bg">
+                 <div className="container-fluid bramd-bg mt-2">
                  <div className="road-carousel container py-5">
                    <h2 className="text-center py-2 text-white">OUR WORKS</h2>
                <Carousel
@@ -532,6 +530,7 @@ const Home = () => {
                   </div>
                     
                  </div>
+                 <div className='Highway-road-section py-5'>
                  <div className="container">
                      <div className="row">
                           <div className="col-md-12 col-lg-6">
@@ -540,7 +539,7 @@ const Home = () => {
                           <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
                                <div className="p-3">
                                    <h2 className="text-uppercase text-color text-style brand-font">highway road</h2>
-                                     <p>Highway roadworks involve construction, upgrading, repair, 
+                                     <p className='text-white'>Highway roadworks involve construction, upgrading, repair, 
                                       or maintenance projects focused on highways, which are major 
                                       roads designed for long-distance travel, often carrying 
                                       large volumes of traffic. These works are critical to ensuring safe, 
@@ -551,6 +550,10 @@ const Home = () => {
                           </div>
                      </div>
                  </div>
+
+                 </div>
+                 </div>
+
     </div>:<Loading/>
       
     }

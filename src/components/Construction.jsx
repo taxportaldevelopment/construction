@@ -1,16 +1,17 @@
 import {Link} from "react-router-dom"
 import constructionImg from "../assets/construction-section.jpeg";
 import works from "../assets/conGif.gif"
-import ourWork1 from "../assets/our-work-1.jpg";
-import ourWork2 from "../assets/our-work-2.jpg";
-import ourWork3 from "../assets/our-work-3.jpg";
-import ourWork4 from "../assets/our-work-4.jpeg";
+// import ourWork1 from "../assets/our-work-1.jpg";
+// import ourWork2 from "../assets/our-work-2.jpg";
+// import ourWork3 from "../assets/our-work-3.jpg";
+// import ourWork4 from "../assets/our-work-4.jpeg";
 // icons
 import { IoMdSettings } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { useState } from "react";
 import Loading from "./layout/Loading";
+import { IoIosArrowRoundForward } from "react-icons/io";
 // image
 import icons1 from "../assets/civil-icons/icons-1.png";
 import icons2 from "../assets/civil-icons/icons-2.png";
@@ -41,6 +42,7 @@ const Construction = () => {
        </div>
 
        {/* construction works */}
+        <div className="bg-light">
         <div className="construction-section container">
               <div className="row p-2">
                   <div className="col-md-12 col-lg-6">
@@ -52,14 +54,18 @@ const Construction = () => {
                        <div>
                           <h1 className="py-3 text-color brand-font">CONTRACTOR</h1>
                           <div>
-                               <p>&quot;Pandian is an experienced and skilled contractor offering a wide range of services in construction and home improvement. With years of hands-on expertise, Pandian is known for delivering high-quality results on time and within budget. Whether you need minor repairs or large-scale construction projects, Pandian provides professional and reliable services.</p>
+                               <p className="py-2">&quot;Pandian is an experienced and skilled contractor offering a wide range of services in construction and home improvement. With years of hands-on expertise, Pandian is known for delivering high-quality results on time and within budget. Whether you need minor repairs or large-scale construction projects, Pandian provides professional and reliable services.</p>
+                               <button className="button-85 d-flex justify-content-evenly align-items-center" role="button"><span>Contact Us</span> <span className="h5"><IoIosArrowRoundForward /></span></button>
                           </div>
                        </div>
                   </div>
               </div>
         </div>
-        <hr />
+           
+        </div>
+            <div className="bg-light">
            <div className="container py-4 construction-intro-section">
+                   <hr />
                 <div className="row">
                     <div className="col-md-12 col-lg-4 mt-3 p-3">
                          <div className="construction-intro">
@@ -112,8 +118,10 @@ const Construction = () => {
                     </div>
                 </div>
            </div>
+
+            </div>
            {/* service-section */}
-            <div className="civil-section-icons p-2 my-3">
+            <div className="civil-section-icons bg-light p-2 my-3">
                      <h2 className="text-center text-color py-3 brand-font">Services Offered</h2>
                   <div className="container">
                         <div className="row">
@@ -202,7 +210,9 @@ const Construction = () => {
                </div> 
          </div>
           {/* Our Works */}
+           <div className="bg-light">
           <Service/>
+           </div>
          </div> :<Loading/>   
         
      }

@@ -76,7 +76,8 @@ const Contact = () => {
                                       </form>
                                </div>
                                <div className="col-md-12 col-lg-6">
-                                    <img src={image2} className="w-100" alt="" />
+                                    {/* <img src={image2} className="w-100" alt="" /> */}
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3518.393033326218!2d80.22230576860451!3d12.974994675795093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU4JzI2LjAiTiA4MMKwMTMnMjEuMyJF!5e1!3m2!1sen!2sin!4v1736752492057!5m2!1sen!2sin" className="w-100" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                </div>
                           </div>
                      </div>

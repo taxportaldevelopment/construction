@@ -20,21 +20,21 @@ const About = () => {
         <div className="about-banner d-flex align-items-center p-4">
             <div className=" p-3 container-fluid">
                    <div className="row">
-                       <div className="col-md-12 col-lg-5 about-banner-content rounded p-2">
-                       <marquee behavior="alternate" direction="top"> <q className='text-white'><h5 className='text-white brand-font'>PANDIAN CONTRACTOR SERVICE</h5></q> </marquee>
-                  <p className='text-white p-2'>&quot;Hello, I am Pandian, a professional contractor with extensive experience in delivering exceptional construction and project management services. My expertise spans residential, commercial, and infrastructure projects, where I focus on quality, efficiency, and customer satisfaction. With a strong team and modern tools, I ensure every project is executed on time and within budget.</p>
+                       <div className="col-md-12 col-lg-5 about-banner-content rounded p-2">   
+                       <marquee behavior="alternate" direction="top"> <q className='text-white d-flex'><h5 className='fw-bold brand-font mx-2 text-color'>PANDIAN CONTRACTOR SERVICE</h5></q> </marquee>
+                  <p className='text-white p-2 text-style'>Pandian, a professional contractor with extensive experience in delivering exceptional construction and project management services. My expertise spans residential, commercial, and infrastructure projects, where I focus on quality, efficiency, and customer satisfaction. With a strong team and modern tools, I ensure every project is executed on time and within budget.</p>
 
                        </div>
                    </div>
              </div>
         </div>
         {/* about intro */}
-        <div className="about-intro">
+        <div className="about-intro text-white mt-2">
+                              <h1 className='py-3 text-center brand-font fw-bold'>About Us</h1>
+                              <p className=' text-center h5'>WE ARE THE LEADERS IN THE ROAD WORKS SECTOR IN THE STATE OF TAMIL NADU <strong>CONSTRUCTION INDUSTRY!</strong></p>
               <div className="about-section container p-5">
                    <div className="row">
                        <div className="col-md-12 col-lg-6">
-                              <h1 className='py-3'><i>About Us</i></h1>
-                              <p className='opacity'>WE ARE THE LEADERS IN THE ROAD WORKS SECTOR IN THE STATE OF TAMIL NADU <strong>CONSTRUCTION INDUSTRY!</strong></p>
                              <div className='p-4'>
                              <img src={introImg} className='w-100' alt="" />
                              </div>
@@ -42,16 +42,14 @@ const About = () => {
                        <div className="col-md-12 col-lg-6">
                             <p>Our Company was incorporated in the year 2012 by Mr. J.Vivek as a civil engineering infrastructure construction organization. With his sharp personality and interest for brilliance, the Company has developed by a wide margin and effectively executed numerous historic point foundation extends in the fields like Roads, Buildings, Irrigation, site development, logistics and many more.</p>
                            <p>The visionary mind and main thrust behind the development of Boson Infra India Private Limited is Mr.J.vivek, an enthusiastic, new age business person who has possessed the capacity to make incredible progress in setting up, building and building up the organization. He holds his Master in administration</p>
-                           <p>BOSON is occupied with the execution of civil engineering projects. The Company gives incorporated designing,integrated engineering, procurement and construction (EPC) services for civil construction and infrastructure sector projects</p>
-                           <p>The Company is a class ‘1-A’ established contractor working with various tamilnadu government departments like pwd, highways, housing board, SIPCOT, SIDCO, etc and has successfully completed various projects.</p>
-                           <p>With a solid workforce of experts bolstered with innovation and a motivating workplace, BOSON makes a win-win circumstance for our clients and end-clients. The organization’s abilities traverse the whole array of development common and basic, earth work exacation and so on.</p>
-                       </div>
+                           <p>BOSON is occupied with the execution of civil engineering projects. The Company gives incorporated designing,integrated engineering, procurement and construction (EPC) services for civil construction and infrastructure sector projects</p>                       </div>
                    </div>
               </div>
         </div>
         {/* Our Senior Consultant's team profile */}
+         <div>
           <div className="about-senior-team container my-4">
-                <h2 className='py-4 text-center text-style text-warning brand-font'>Our Senior Consultant&apos;s team profile</h2>
+                <h2 className='py-4 text-center text-style text-color brand-font'>__Our Senior Consultant&apos;s team profile__</h2>
 
                <div className="row">
                     <div className="col-md-6 col-lg-4 mt-4">
@@ -115,6 +113,8 @@ const About = () => {
                          to safety standards, building codes, and environmental regulations.</p>
                </div>
           </div>
+
+         </div>
     </div>:<Loading/>
         }
     </div>

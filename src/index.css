@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.disc-section{
+    list-style:disc;
+}
 .disc{
     list-style:lower-roman;
 }
@@ -35,7 +38,9 @@
 /* text-style */
 .text-style{
     letter-spacing: 3px;
-    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /* unlist */
 .unlist{
@@ -48,7 +53,7 @@
 /* home-section-banner */
 .home-section-banner{
     height: 67vh;
-     background:linear-gradient(to right,#00000069,#0000005d) ,url(./assets/contruction-banner.png) no-repeat;
+     background:linear-gradient(to right,#0000007b,#000000c7,#000000c7,#00000082) ,url(./assets/contruction-banner.png) no-repeat;
      background-size:cover;
 }
 /*  house-works start */
@@ -201,6 +206,16 @@
    position: absolute;
    top: 540px;
 }
+.perfect-layout{
+    /* position: relative; */
+}
+.perfect-layout-child::before{
+     content: "";
+     inset: 0;
+     position: absolute;
+    
+
+}
 .perfect-box:hover{
       transform: translateY(-10px);
       transition: all 1s ease-in;
@@ -213,11 +228,12 @@
     margin-top: 25%;
 }
 .home-introduction .para{
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 /* home-introduction */
 .home-introduction{
-    background:linear-gradient(to right,#ffffffe1,#ffffff,#ffffffe6) , url(./assets/home/silhouette-city-background-illustration-free-vector.jpg) center;
+      background: #f4efefda;
+    /* background:linear-gradient(to right,#ffffffe1,#ffffff,#ffffffe6) , url(./assets/home/silhouette-city-background-illustration-free-vector.jpg) center; */
 }
 /* our-service */
 .our-service{
@@ -226,7 +242,7 @@
 }
 /* our-home-service */
 .our-home-service{
-    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(31, 79, 184, 0.03) 0px 1px 1px -0.5px, rgba(34, 92, 215, 0.04) 0px 2px 2px -1px, rgba(19, 84, 225, 0.356) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(31, 79, 184, 0.03) 0px 1px 1px -0.5px, rgba(34, 92, 215, 0.04) 0px 2px 2px -1px, rgba(19, 84, 225, 0.356) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(13, 54, 141, 0.509) 0px 24px 24px -8px;
 
 }
 .our-home-service:hover{
@@ -245,10 +261,11 @@
     background-size: cover;
 }
 .about-banner-content{
-    background-color: rgba(201, 201, 14, 0.429);
+    background-color: rgba(0, 0, 0, 0.74);
 }
 .about-intro{
-    background-image: url(./assets/about/bg-shape-04.png);
+    background:linear-gradient(to right,#151313b5,#171616b9 ),url(./assets/about/wave-haikei.png) no-repeat bottom;
+    background-size:cover;
 }
 .about-senior-team .our-senior-about{
      border: 1px solid #ccc;
@@ -341,6 +358,14 @@
     right: 0;
     transition: all 1s ease-in;
 }
+/* Highway-road-section */
+.Highway-road-section{
+     background: url(./assets/blob-scene-haikei.png) no-repeat;
+     background-size: cover;
+}
+.Highway-road-section img{
+      border-bottom-left-radius: 40%;
+}
 /* footer-section */
 .footer-section{
     background:linear-gradient(to right,#1f1818e7,#141414f0) ,url(./assets/logistics/construction-site-truck.jpg) no-repeat center;
@@ -427,8 +452,8 @@
      background-color: transparent;
 }
 .form-group input[type="checkbox"],input[type="radio"]{
-     height: 28px;
-     width: 28px;
+     height: 20px;
+     width: 20px;
 }
 /* contact-section */
 .contact-section{
