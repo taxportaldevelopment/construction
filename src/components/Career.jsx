@@ -36,11 +36,11 @@ const Career = () => {
                           <form>
                               <div className="row p-4 rounded bg-secondary">
                                   <div className="col-md-12">
-                                       <input type="text" placeholder="Keyword" className="form-control" />
+                                       <input type="text" placeholder="Keyword" className="form-control py-2" />
                                   </div>
                                   <div className="col-md-12">
                                        <div className="row mt-4 ">
-                                           <div className="col-md-12 col-lg-3 mt-3">
+                                           <div className="col-md-12 col-lg-3 mt-3 ">
                                                  <select name="" id="" className="form-control">
                                                      <option value="">---select---</option>
                                                      <option value="Non Technical">Non Technical</option>
@@ -162,7 +162,7 @@ const Career = () => {
                  <div className="container-fluid career-more">
                <div className="container p-4">
 
-                     <h3 className="text-center opacity text-white py-5">Please submit your resume for future consideration. We will 
+                     <h3 className="text-center opacity text-white py-5 brand-font">Please submit your resume for future consideration. We will 
                         certainly keep you in mind and contact you if a job becomes available ...
                          Drop files here ...</h3>
                          <div className="row">
@@ -258,7 +258,7 @@ const Career = () => {
                                                     <input type="file" className="form-control" />
                                               </div>
                                               <div className="form-group my-2">
-                                                   <textarea className="form-control p-2 fw-bold" placeholder="Message...." name="" id="" cols="30" rows="6"></textarea>
+                                                   <textarea className="form-control p-2 fw-bold" placeholder="Message...." name="" id="" cols="30" rows="4"></textarea>
                                               </div>
                                               <div className="form-group">
                                                    <button className="btn btn-primary w-100 my-2">SEND MESSAGE</button>

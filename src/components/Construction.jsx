@@ -54,7 +54,7 @@ const Construction = () => {
                        <div>
                           <h1 className="py-3 text-color brand-font">CONTRACTOR</h1>
                           <div>
-                               <p className="py-2">&quot;Pandian is an experienced and skilled contractor offering a wide range of services in construction and home improvement. With years of hands-on expertise, Pandian is known for delivering high-quality results on time and within budget. Whether you need minor repairs or large-scale construction projects, Pandian provides professional and reliable services.</p>
+                               <p className="py-2 brand-font">&quot;Pandian is an experienced and skilled contractor offering a wide range of services in construction and home improvement. With years of hands-on expertise, Pandian is known for delivering high-quality results on time and within budget. Whether you need minor repairs or large-scale construction projects, Pandian provides professional and reliable services.</p>
                                <button className="button-85 d-flex justify-content-evenly align-items-center" role="button"><span>Contact Us</span> <span className="h5"><IoIosArrowRoundForward /></span></button>
                           </div>
                        </div>
@@ -75,7 +75,7 @@ const Construction = () => {
                                     </div>
                                     <div className="content">
                                           <h5 className="py-2 text-center">OUR EXPERIENCE</h5>
-                                          <p>Our experienced project managers, 
+                                          <p className="brand-font">Our experienced project managers, 
                                             site supervisors and tenant coordinators, 
                                             combined with our extensive fleet and equipment, 
                                             gives us the flexibility to expertly add value 
@@ -92,7 +92,7 @@ const Construction = () => {
                                     </div>
                                     <div className="content">
                                           <h5 className="py-2 text-center">SUCCESS WITHIN RIGID STIPULATED SUMS</h5>
-                                          <p>We are committed to working within
+                                          <p className="brand-font">We are committed to working within
                                           hard budget constraints while delivering beyond expectations. 
                                           Our in-house electronic plans room and document distribution 
                                           software allows us to track trade 
@@ -109,7 +109,7 @@ const Construction = () => {
                                     </div>
                                     <div className="content">
                                           <h5 className="py-2 text-center">PROFESSIONALLY QUALIFIED</h5>
-                                          <p>Our full-service professional capabilities give developers 
+                                          <p className="brand-font">Our full-service professional capabilities give developers 
                                             the comfort of knowing a dependable, highly experienced contractor 
                                             is managing a wide spectrum of the project’s construction requirements.</p>
                                     </div>
@@ -118,11 +118,22 @@ const Construction = () => {
                     </div>
                 </div>
            </div>
+            </div>
+                        {/* contr */}
+                        <div className="my-4 py-3 container">
+                 <div className="card p-1">
+                    <div className="card p-5">
+                  <p className="h4 brand-font opacity">“Good buildings come from good people, and all problems are solved by good design.” -Stephen Gardiner</p>
+                    </div>
 
+                 </div>
             </div>
            {/* service-section */}
-            <div className="civil-section-icons bg-light p-2 my-3">
-                     <h2 className="text-center text-color py-3 brand-font">Services Offered</h2>
+            <div className="civil-section-icons bg-light py-5 my-3">
+               <div>
+                     <h2 className="text-center text-color py-2 brand-font">Services Offered</h2>
+                     <div className='d-flex justify-content-center pb-3'><div className='title-span-style'></div></div>
+               </div>
                   <div className="container">
                         <div className="row">
                              <div className="col-md-12 col-lg-4 p-2 mt-2">
@@ -132,16 +143,6 @@ const Construction = () => {
                                          </div>
                                          <div className="right-side p-2">
                                               <p><strong>General Construction:</strong> Including residential, commercial, and industrial projects such as new builds, renovations, and expansions.</p>
-                                         </div>
-                                  </div>
-                             </div>
-                             <div className="col-md-12 col-lg-4 p-2 mt-2">
-                                  <div className="shadows rounded d-flex justify-content-center align-items-center">
-                                         <div className="left-side p-1">
-                                               <img src={icons2} height={65} alt="" />
-                                         </div>
-                                         <div className="right-side p-2">
-                                              <p><strong>Home Renovations:</strong> Transforming interiors and exteriors, including kitchen remodeling, bathroom updates, and full home renovations.</p>
                                          </div>
                                   </div>
                              </div>
@@ -165,26 +166,7 @@ const Construction = () => {
                                          </div>
                                   </div>
                              </div>
-                             <div className="col-md-12 col-lg-4 p-2 mt-2">
-                                  <div className="shadows rounded d-flex justify-content-center align-items-center">
-                                         <div className="left-side p-1">
-                                               <img src={icons5} height={65} alt="" />
-                                         </div>
-                                         <div className="right-side p-2">
-                                              <p><strong>Roofing & Siding:</strong> Expert installation and repair of roofing systems and exterior cladding.</p>
-                                         </div>
-                                  </div>
-                             </div>
-                             <div className="col-md-12 col-lg-4 p-2 mt-2">
-                                  <div className="shadows rounded d-flex justify-content-center align-items-center">
-                                         <div className="left-side p-1">
-                                               <img src={icons6} height={65} alt="" />
-                                         </div>
-                                         <div className="right-side p-2">
-                                              <p><strong>Painting & Finishing:</strong> Interior and exterior painting services with a focus on durability and aesthetics.</p>
-                                         </div>
-                                  </div>
-                             </div>
+
                         </div>
                   </div>
             </div>

@@ -18,11 +18,11 @@ const About = () => {
             loading?
     <div>
         <div className="about-banner d-flex align-items-center p-4">
-            <div className=" p-3 container-fluid">
+            <div className=" p-3 container-fluid">l
                    <div className="row">
                        <div className="col-md-12 col-lg-5 about-banner-content rounded p-2">   
-                       <marquee behavior="alternate" direction="top"> <q className='text-white d-flex'><h5 className='fw-bold brand-font mx-2 text-color'>PANDIAN CONTRACTOR SERVICE</h5></q> </marquee>
-                  <p className='text-white p-2 text-style'>Pandian, a professional contractor with extensive experience in delivering exceptional construction and project management services. My expertise spans residential, commercial, and infrastructure projects, where I focus on quality, efficiency, and customer satisfaction. With a strong team and modern tools, I ensure every project is executed on time and within budget.</p>
+                       <marquee behavior="alternate" direction="top"> <q className='text-white d-flex'><h5 className='fw-bold brand-font mx-2 text-color about-sec-font'>PANDIAN CONTRACTOR SERVICE</h5></q> </marquee>
+                  <p className='text-white p-2 brand-font'>Pandian, a professional contractor with extensive experience in delivering exceptional construction and project management services. My expertise spans residential, commercial, and infrastructure projects, where I focus on quality, efficiency, and customer satisfaction. With a strong team and modern tools, I ensure every project is executed on time and within budget.</p>
 
                        </div>
                    </div>
@@ -49,10 +49,13 @@ const About = () => {
         {/* Our Senior Consultant's team profile */}
          <div>
           <div className="about-senior-team container my-4">
-                <h2 className='py-4 text-center text-style text-color brand-font'>__Our Senior Consultant&apos;s team profile__</h2>
+               <div>
+                <h2 className='py-2 text-center text-style text-color brand-font'>Our Senior Consultant&apos;s team profile</h2>
+                <div className='d-flex justify-content-center pb-3'><div className='title-span-style'></div></div>
+               </div>
 
                <div className="row">
-                    <div className="col-md-6 col-lg-4 mt-4">
+                    <div className="col-6 col-lg-4 mt-4">
                          <div className="our-senior-about">
                                <div className="senior-team">
                                     <div className="senior-image d-flex justify-content-center">
@@ -65,7 +68,7 @@ const About = () => {
                                </div>
                          </div>
                     </div>
-                    <div className="col-md-6 col-lg-4 mt-4">
+                    <div className="col-6 col-lg-4 mt-4">
                          <div className="our-senior-about">
                                <div className="senior-team">
                                     <div className="senior-image d-flex justify-content-center">
@@ -78,7 +81,7 @@ const About = () => {
                                </div>
                          </div>
                     </div>
-                    <div className="col-md-6 col-lg-4 mt-4">
+                    <div className="col-6 col-lg-4 mt-4">
                          <div className="our-senior-about">
                                <div className="senior-team">
                                     <div className="senior-image d-flex justify-content-center">
@@ -92,7 +95,7 @@ const About = () => {
                          </div>
                     </div>
                </div> 
-               <div className='p-4 text-style'>
+               <div className='p-4 brand-font'>
                     <p>
                     Construction work refers to the process of building, altering, repairing, or demolishing
                      structures and infrastructure. It involves a wide range of activities and tasks that can
@@ -101,11 +104,11 @@ const About = () => {
                       and construction laborers. The work can be divided into several phases, including:</p>
                       {/* list */}
                       <ul>
-                         <li><strong>Planning and Design:</strong> This stage involves creating blueprints, obtaining permits, and setting budgets for the project.</li>
-                         <li><strong>Site Preparation:</strong> This includes clearing the land, excavating, and laying foundations.</li>
-                         <li><strong>Building and Construction:</strong> This is the core stage where the structure is built. It may involve framing, electrical work, plumbing, roofing, and other specialized trades.</li>
-                         <li><strong>Finishing:</strong> This includes tasks like painting, flooring, installing fixtures, and making final adjustments.</li>
-                         <li><strong>Inspection and Handover:</strong> Ensuring the structure meets safety and quality standards before being handed over to the owner or client.</li>
+                         <li className='py-1'><strong>Planning and Design:</strong> This stage involves creating blueprints, obtaining permits, and setting budgets for the project.</li>
+                         <li className='py-1'><strong>Site Preparation:</strong> This includes clearing the land, excavating, and laying foundations.</li>
+                         <li className='py-1'><strong>Building and Construction:</strong> This is the core stage where the structure is built. It may involve framing, electrical work, plumbing, roofing, and other specialized trades.</li>
+                         <li className='py-1'><strong>Finishing:</strong> This includes tasks like painting, flooring, installing fixtures, and making final adjustments.</li>
+                         <li className='py-1'><strong>Inspection and Handover:</strong> Ensuring the structure meets safety and quality standards before being handed over to the owner or client.</li>
                       </ul>
                       <p>Construction work can apply to various types of projects, 
                          including residential homes, commercial buildings, roads, 

@@ -3,8 +3,6 @@ import {
     NavbarBrand,
     NavbarContent,
     NavItem,
-    SideContent,
-    SideItems,
     DropDown,
   } from "responsive-navigation";
   import {Link} from "react-router-dom"
@@ -13,16 +11,23 @@ import { FaPhone } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
-// image
-import logo from "../../assets/logo.png";
+
 import { useState } from "react";
 const Header = () => {
      const [active,setActive] = useState("construction")
-    console.log(active);
+
+     window.onpopstate  = function() {
+       let urlSplit = window.location.href.split("/")
+      setActive(urlSplit[3])
+      
+      return false;
+  }
     
+
+
   return (
-    <div className="fw-bold">
-        <div className="header-contact d-flex justify-content-between py-2 px-3  bramd-bg text-white">
+    <div className="fw-bold header-contact">
+        <div className=" d-flex justify-content-between py-2 px-3  bramd-bg text-white">
               <div>
                    <div>
                        <a href="tel:+91 9940025556" className="text-white "><h6><FaPhone /> +91 7359273084</h6></a>
@@ -46,7 +51,7 @@ const Header = () => {
 >
   <NavbarBrand>
     <Link to={"/construction"} onClick={()=>setActive("construction")} className="font-weight-bold" style={{ fontSize: "30px", fontWeight: "700" }}>
-       <img src={logo} height={60} alt="" />
+        <h2>LOGO</h2>
     </Link>
   </NavbarBrand>
   <NavbarContent>

@@ -1,11 +1,10 @@
 import{  useState } from 'react';
-import roadwork from "../assets/road-work/grid-style.png"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Typewriter from "typewriter-effect"
 // image
 import Construction from "../assets/home/contruction-work.jpg";
-import { MdArrowForwardIos } from "react-icons/md";
+import waterLorry from "../assets/home/water-lorry.png"
 // icons
 import { BsBuildings } from "react-icons/bs";
 import { FcElectricalSensor } from "react-icons/fc";
@@ -20,7 +19,6 @@ import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { BiSolidBuildingHouse } from "react-icons/bi";
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaHandPointRight } from "react-icons/fa";
-import { CiCircleChevRight } from "react-icons/ci";
 import { IoIosArrowRoundForward } from "react-icons/io";
 // counter
 import CountUp from 'react-countup';
@@ -45,6 +43,9 @@ import image6 from "../assets/road-work/img/slider-6.jpg";
 import image7 from "../assets/road-work/img/slider-7.jpg";
 import image8 from "../assets/road-work/img/slider-8.jpg";
 import imageBottom from "../assets/road-work/road-work-bottom.jpg";
+import proessProject1 from "../assets/home/img/img-1.png";
+import proessProject2 from "../assets/home/img/img-2.png";
+import proessProject3 from "../assets/home/img/img-3.png";
 const Home = () => {
   const responsive = {
     desktop: {
@@ -69,7 +70,7 @@ const Home = () => {
     const [loading,setLoading] = useState(false);
 
     setTimeout(()=>{
-          setLoading(true)
+          setLoading(true)  
     },1000)
     
 
@@ -83,7 +84,7 @@ const Home = () => {
 
                 <div>
                   <h1><i>SRI PERUMAL ENTERPRISES</i></h1>
-              <div className="h2 brand-font d-flex justify-content-center text-text align-items-center">
+              <div className="h2  d-flex justify-content-center text-text align-items-center">
               <Typewriter
           options={{
             strings: ['CIVIL', "MECHANICAL ENGINEERING",'ELECTRICAL ENGINEERING', 'CONTRACTOR',"CMWSS BOARD "],
@@ -141,7 +142,7 @@ const Home = () => {
         </div>
         {/* home-intro */}
         <div className="home-introduction container-fluid p-3">
-                 <h1 className="para text-color text-center py-4">Welcome to <span className="fw-bold brand-font">Pandian India Private Limited</span></h1>
+                 <h1 className="para text-color text-center py-4">Welcome to <span className="fw-bold brand-font">Perumal India PVT.LTD</span></h1>
               <div className="container">
               <div className="row">
                  <div className="col-md-12 col-lg-6">
@@ -149,14 +150,14 @@ const Home = () => {
                          <img src={Construction} className="w-75 rounded" alt="" />
                       </div>
                  </div>
-                 <div className="col-md-12 col-lg-6">
-                             <p className='inner-text'>Pandian Contractor specializes in delivering high-quality contracting services with a focus on precision, efficiency, and customer satisfaction. With years of expertise, Pandian Contractor ensures that every project, big or small, is executed with professionalism and dedication.</p>       
+                 <div className="col-md-12 col-lg-6 brand-font">
+                             <p className='inner-text'><strong>Perumal</strong> Contractor specializes in delivering high-quality contracting services with a focus on precision, efficiency, and customer satisfaction. With years of expertise, Perumal Contractor ensures that every project, big or small, is executed with professionalism and dedication.</p>       
 
                           <div className='py-3 inner-text'>
                               <ul>
-                                 <li><span className='text-text fw-bold'>Construction Excellence :</span> Expertise in residential, commercial, and infrastructure projects, ensuring timely delivery and adherence to quality standards.</li>
-                                 <li><span className='text-text fw-bold'>Client-Centric Approach :</span> Tailored solutions to meet the specific needs of clients, ensuring transparency and trust throughout the project lifecycle.</li>
-                                 <li><span className='text-text fw-bold'>Innovative Techniques : </span> Utilization of modern tools and sustainable practices to deliver cost-effective and durable solutions.</li>
+                                 <li className='py-2'><span className='text-text fw-bold'>Construction Excellence :</span> Expertise in residential, commercial, and infrastructure projects, ensuring timely delivery and adherence to quality standards.</li>
+                                 <li className='py-2'><span className='text-text fw-bold'>Client-Centric Approach :</span> Tailored solutions to meet the specific needs of clients, ensuring transparency and trust throughout the project lifecycle.</li>
+                                 <li className='py-2'><span className='text-text fw-bold'>Innovative Techniques : </span> Utilization of modern tools and sustainable practices to deliver cost-effective and durable solutions.</li>
                               </ul>
                           </div>
                           <button className="button-85" role="button">Get Start <IoIosArrowRoundForward /></button>
@@ -167,10 +168,10 @@ const Home = () => {
         </div>
         {/* our service */}
         <div className="our-service container">
-                <h2 className="text-center text-style text-color py-3">OUR SERVICE</h2>
-
+                <h2 className="text-center text-style text-color py-4">OUR SERVICE</h2>
+           
                <div className="row d-flex justify-content-evenly">
-                    <div className="col-md-12 col-lg-5">
+                    <div className="col-md-12 col-lg-5 mt-3">
                     <div className=" our-home-service rounded py-4 px-4">
               <div >
                    <div className="icons d-flex">
@@ -189,7 +190,7 @@ const Home = () => {
                  
              </div>
                     </div>
-                    <div className="col-md-12 col-lg-5">
+                    <div className="col-md-12 col-lg-5 mt-3">
                     <div className=" our-home-service rounded py-4 px-4">
               <div >
                    <div className="icons d-flex">
@@ -211,7 +212,7 @@ const Home = () => {
                </div>
                {/* second row */}
                <div className="row mt-3 d-flex justify-content-evenly">
-                   <div className="col-md-12 col-lg-5">
+                   <div className="col-md-12 col-lg-5 mt-3">
                    <div className=" our-home-service rounded py-4 px-4">
               <div >
                    <div className="icons d-flex">
@@ -230,7 +231,7 @@ const Home = () => {
                  <br />
              </div>
                    </div>
-                   <div className="col-md-12 col-lg-5">
+                   <div className="col-md-12 col-lg-5 mt-3">
                    <div className=" our-home-service rounded py-4 px-4">
               <div >
                    <div className="icons d-flex">
@@ -274,68 +275,46 @@ const Home = () => {
                    </div>
                </div>
         </div>
-
-         {/* house works */}
-         <div className="house-works my-5 py-5 container-fluid">
-            <h2 className='text-center py-4 text-color text-style'>HOUSE PLANING</h2>
-          <div className="row d-flex justify-content-evenly">
-               <div className="col-md-12 col-lg-3 p-2">
-                   <div className="cart">
-                     <div className="imgBx"></div>
-        <div className="content">
-            <span className="price">
-                <h5 className='text-warning text-center'>House Works</h5>
-                <p  className='text-white px-1'><strong className='text-warning'>Price</strong> : ₹ 11,0000</p>
-            
-             </span>
-             <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
-              <div className="text-center">
-               <button className="button-85" role="button">Book Now <MdArrowForwardIos className='text-white' /></button>
-              </div>
-             </div>
+         {/* project-process start */}
+             <div className="project-process py-4 my-3 container">
+                  <div>
+                  <h2 className='text-center brand-font py-2 fw-bold text-color'>Construction Process</h2>
+                   <div className='d-flex justify-content-center pb-3'><div className='title-span-style'></div></div>
+                  </div>
+                  <div className='d-flex justify-content-around flex-wrap'>
+                     <div className="process-items mt-3">
+                           <div className="image d-flex justify-content-center align-items-center">
+                                 <img src={proessProject1} height={150} alt="" />
+                           </div>
+                           <div className="details">
+                               <h1 className='text-center text-success'>01</h1>
+                               <p className='fw-bold h5 opacity'>Plan / project</p>
+                           </div>
                      </div>
-
-               </div>
-               <div className="col-md-12 col-lg-3 p-2">
-                   <div className="cart">
-                     <div className="imgBx cart-image-change"></div>
-              <div className="content">
-            <span className="price">
-                <h5 className='text-warning text-center'>House Works</h5>
-                <p  className='text-white px-1'><strong className='text-warning'>Price</strong> : ₹ 11,0000</p>
-            
-             </span>
-             <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
-              <div className="text-center">
-               <button className="button-85" role="button">Book Now <MdArrowForwardIos className='text-white' /></button>
-              </div>
-             </div>
+                     <div className="process-items mt-3">
+                           <div className="image d-flex justify-content-center align-items-center">
+                                 <img src={proessProject2} height={150} alt="" />
+                           </div>
+                           <div className="details">
+                               <h1 className='text-center text-success'>02</h1>
+                               <p className='fw-bold h5 opacity'>Design-Build</p>
+                           </div>
                      </div>
-
-               </div>
-               <div className="col-md-12 col-lg-3 p-2">
-                   <div className="cart">
-                     <div className="imgBx house-three"></div>
-        <div className="content">
-            <span className="price">
-                <h5 className='text-warning text-center'>House Works</h5>
-                <p  className='text-white px-1'><strong className='text-warning'>Price</strong> : ₹ 11,0000</p>
-            
-             </span>
-             <p className='text-white p-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, libero.</p>
-              <div className="text-center">
-                 <button className="button-85" role="button">Book Now <MdArrowForwardIos className='text-white' /></button>
-              </div>
-             </div>
+                     <div className="process-items mt-3">
+                           <div className="image d-flex justify-content-center align-items-center">
+                                 <img src={proessProject3} height={150} alt="" />
+                           </div>
+                           <div className="details">
+                               <h1 className='text-center text-success'>03</h1>
+                               <p className='fw-bold h5 opacity'>Project Execution</p>
+                           </div>
                      </div>
-
-               </div>
-          </div>
-         </div>
-
+                  </div>
+             </div>
+         {/* project-process end */}
         {/* projects */}
-        <div className="projects bramd-bg py-4 mt-4">
-         <div className="container">
+        <div className="projects bramd-bg py-4 mt-5">
+         <div className="container my-2">
            <div className="row">
                <div className="col-md-3 col-sm-4 col-xs-6">
                    <div>
@@ -423,66 +402,6 @@ const Home = () => {
         </div>
 
         </div>
-               <div className='bg-dark'>
-
-               <div className="highway text-white container p-3">
-                   <div className="row"> 
-                        <div className="col-md-12 col-lg-6">
-                             <h2 className="text-center text-color brand-font">Road and Highway <br /> Construction</h2>
-                                 <p className='text-white'>Roadworks refer to any kind of activity or project 
-                                  aimed at constructing, upgrading, maintaining, or repairing 
-                                  road infrastructure. Roadworks may involve several stages, each 
-                                  tailored to specific needs such as resurfacing, widening, or 
-                                  ensuring roads are in good condition for safety and efficiency. 
-                                  Here&apos;s a breakdown of what might be included in a 
-                                  typical roadwork project:</p>
-
-        <div>
-                         <h4 className='brand-font'>Planning and Design</h4>
-            <ul>
-                <li><CiCircleChevRight className='me-2'/>Surveying the area to determine existing road conditions and required improvements.</li>
-                <li><CiCircleChevRight className='me-2'/>Designing road layouts, traffic management plans, and environmental considerations.</li>
-                <li><CiCircleChevRight className='me-2'/>Permitting to ensure the work is legal and aligns with local policies and regulations.</li>
-            </ul>
-            <div>
-                <h4 className='brand-font'>Preparation and Mobilization</h4>
-                <ul>
-                <li><CiCircleChevRight className='me-2'/>Traffic Diversion: Temporary road closures or detours are established to ensure safety and minimize disruption.</li>
-                <li><CiCircleChevRight className='me-2'/>Equipment and Materials: Heavy machinery like bulldozers, excavators, and rollers are mobilized. Materials like asphalt, concrete, and road signs are brought to the site.</li>
-            </ul>
-            </div>
-            <div>
-                 <h4 className='brand-font'>Excavation and Earthworks</h4>
-                  <ul>
-                  <li><CiCircleChevRight className='me-2'/>The existing road may be dug up, and earthworks are carried out to clear the path or adjust the road’s level.</li>
-                <li><CiCircleChevRight className='me-2'/>Drainage systems might be installed to prevent water accumulation, which could degrade the road surface over time.</li>
-
-                  </ul>
-            </div>
-     </div> 
-                        </div>
-                        <div className="col-md-12 col-lg-6">
-                            <img src={roadwork} className="p-4 w-100" alt="" />
-                        <div>
-                          <h4 className='brand-font'>Signage and Safety Features</h4>
-                             <ul>
-                                <li>Road markings such as lanes and crosswalks are painted.</li>
-                                <li>Traffic signs are placed to direct traffic, warn of hazards, or indicate speed limits.</li>
-                                <li>Barriers or guardrails may be added to enhance road safety.</li>
-                             </ul>
-                        </div>
-                        <div>
-                             <h4 className='brand-font'>Finishing Touches and Cleanup</h4>
-                              <ul>
-                                 <li>Surface smoothing is done for a final check on the quality of the road.</li>
-                                 <li>Cleanup ensures that debris and excess materials are cleared from the site, and the road is ready for use.</li>
-                                 <li>Final inspection to ensure that the work meets all legal and safety standards.</li>
-                              </ul>
-                        </div>
-                        </div>
-                   </div>
-               </div>
-               </div>
                {/* slider-image-carousel */}
                  <div className="container-fluid bramd-bg mt-2">
                  <div className="road-carousel container py-5">
@@ -534,18 +453,22 @@ const Home = () => {
                  <div className="container">
                      <div className="row">
                           <div className="col-md-12 col-lg-6">
-                               <img src={imageBottom} className="w-100 p-4" alt="" />
+                               <img src={waterLorry} className="w-100 p-4" alt="" />
                           </div>
                           <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
                                <div className="p-3">
-                                   <h2 className="text-uppercase text-color text-style brand-font">highway road</h2>
-                                     <p className='text-white'>Highway roadworks involve construction, upgrading, repair, 
-                                      or maintenance projects focused on highways, which are major 
-                                      roads designed for long-distance travel, often carrying 
-                                      large volumes of traffic. These works are critical to ensuring safe, 
-                                      efficient, and durable transportation systems that support both local 
-                                      and national mobility. Highway roadwork projects may range from minor 
-                                      repairs to large-scale construction, and typically follow several key stages:</p> 
+                                   <h2 className="text-uppercase text-color text-style brand-font">Water Supplies</h2>
+                                     <p className='text-white brand-font'>
+                                     Metro water supplies refer to the water 
+                                     resources provided to urban areas through centralized systems. 
+                                     These supplies typically come from a variety of sources 
+                                     including rivers, reservoirs, lakes, and groundwater, 
+                                     and are treated and distributed through extensive 
+                                     networks of pipelines, pumps, and water treatment 
+                                     plants. The aim is to ensure that large populations 
+                                     in metropolitan areas have access to clean and safe 
+                                     drinking water, as well as water for other uses 
+                                     like sanitation, irrigation, and industrial processes.</p> 
                                </div>
                           </div>
                      </div>
