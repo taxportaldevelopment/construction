@@ -41,7 +41,7 @@ function App() {
 
            <div className="app-js-icons">
                 <div className="icon">
-                  <a className="text-white h4" href={`whatsapp:contact=837597839@s.whatsapp.com&message="I'd like to chat with you`}>
+                  <a className="text-white h4" href={`whatsapp:contact=7358273084@s.whatsapp.com&message="I'd like to chat with you`}>
                     <FaWhatsapp />
                   </a>
           

@@ -46,7 +46,7 @@ const Footer = () => {
                           <h5 className="py-3 border-bottom text-style">HEAD OFFICE</h5>
                           <span><IoLocationOutline className="h4" /></span>
                           <p>No.67 C-Block Ezhil Nagar Perumbakkam Pin : Chennai 600100</p>
-                          <span><IoIosCall  className="px-1 h2"/>+ 91 44 3140 2500 <br /> <span><IoIosCall  className="px-1 h2"/>+ +91 7359273084</span> </span>
+                          <span><IoIosCall  className="px-1 h2"/>+ 91 44 3140 2500 <br /> <span><IoIosCall  className="px-1 h2"/>+ +91 73582 73084</span> </span>
                              
                           <p><MdOutlineMail className="px-1 h2" /> sriperumalenterprises19@gmail.com</p>
                      </div>

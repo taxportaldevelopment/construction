@@ -47,7 +47,7 @@ const Contact = () => {
                                   </div>
                                   <div className="phone">
                                       <h6>Contact US</h6>
-                                      <p>(+ 91) 7359273084 <br /> (+ 91) 44 3140 2500</p>
+                                      <p>(+ 91) 73582 73084 <br /> (+ 91) 44 3140 2500</p>
                                   </div>
                                   <div>
                                       <p className="opacity">At Sri Perumal Construction, we understand that building projects can arise at any time. That’s why we’re available 24/7 to assist you with your construction needs. Whether it's an urgent repair, project inquiry, or expert advice, our dedicated team is just a call away, ready to provide reliable solutions, day or night.</p>
