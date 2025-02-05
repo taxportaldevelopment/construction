@@ -27,12 +27,12 @@ function App() {
                <Route path="/construction"  element={<Home/>} />
                <Route path="/about"  element={<About/>} />
                <Route path="/construction-work"  element={<Construction/>} />
-               <Route path="/electrical"  element={<Electrical/>} /> 
+               {/* <Route path="/electrical"  element={<Electrical/>} />  */}
                <Route path="/metrowater"  element={<MetroWater/>}/>
                <Route path="/contractor"  element={<Contractore/>}/>
                {/* <Route path="/road-work"  element={<RoadWork/>} /> */}
                <Route path="/mechanical"  element={<Logistics/>}/>
-               <Route path="/irrigation" element={<Irrigation/>} />
+               {/* <Route path="/irrigation" element={<Irrigation/>} /> */}
                {/* <Route path="/readymixconcrete" element={<Readymixconcrete/>} />  */}
                <Route path="/career" element={<Career/>} />
                <Route path="/contact" element={<Contact/>} />

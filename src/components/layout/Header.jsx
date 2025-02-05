@@ -71,9 +71,9 @@ const Header = () => {
       <NavItem>
         <Link onClick={()=>setActive("mechanical")} to={"/mechanical"} style={{color:(active == "mechanical"?"orangered":"black")}} >Mechanical</Link>
       </NavItem>
-      <NavItem>
+      {/* <NavItem>
            <Link onClick={()=>setActive("electrical")} to={"/electrical"} style={{color:(active == "electrical"?"orangered":"black")}} >Electrical</Link>
-      </NavItem>
+      </NavItem> */}
       <NavItem>
            <Link onClick={()=>setActive("metrowater")} to={"/metrowater"} style={{color:(active == "metrowater"?"orangered":"black")}} >Metro Water</Link>
       </NavItem>

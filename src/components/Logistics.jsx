@@ -1,13 +1,13 @@
 import {Link} from "react-router-dom"
 // image
 import image1 from "../assets/logistics/mechanical/image-1.jpg"
-import image2 from "../assets/logistics/mechanical/image-2.jpg"
-import image3 from "../assets/logistics/mechanical/image-3.jpg"
+import image2 from "../assets/logistics/mechanical/image-2.jpeg"
+import image3 from "../assets/logistics/mechanical/image-3.jpeg"
 import image4 from "../assets/logistics/mechanical/image-4.jpg"
 import truckGif from "../assets/logistics/mechanical-set.gif"
 // icons
 import { IoSettingsOutline } from "react-icons/io5"; 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Loading from "./layout/Loading"
 import Service from "./compo/Service"
 const Logistics = () => {
@@ -17,10 +17,16 @@ const Logistics = () => {
      setTimeout(()=>{
            setLoading(true)
      },3000)
+         useEffect(()=>{
+           function getRefresh(){
+             window.scrollTo(0, 0);
+         }
+         getRefresh()
+        },[]) 
   return (
     <div>
        {loading?
-       <div>
+       <div className="scroll-banner-scroll">
         <div className="logistics-banner d-flex justify-content-center align-items-center">
         <div>
                  <Link to={"/construction"} className="text-white px-2 h5 fw-bold">Home</Link><span className="text-white px-2 fw-bold">/</span>
@@ -54,36 +60,24 @@ const Logistics = () => {
         <div className="container my-4">
         <div className="row">
                   <div className="col-md-12 col-lg-6">
-                      <h2 className="text-style text-color brand-font">Design and Manufacturing</h2>
-                      <p>Mechanical engineers are responsible for the design and 
-                         production of various mechanical systems and products. 
-                         They work with tools like Computer-Aided Design (CAD) 
-                         software to create detailed models and simulations. 
-                         Their expertise ensures that products like engines, 
-                         machinery, and consumer devices are functional, 
-                         efficient, and durable. Manufacturing processes such 
-                         as casting, welding, machining, and 3D printing are 
-                         integral to transforming designs into physical objects.</p>
+                      <h2 className="text-style text-color brand-font">Welding Work&apos;S</h2>
+                      <p  className="brand-font">Welding is a process used to join materials, typically metals or thermoplastics, by causing them to fuse together under high heat. This is achieved by melting the workpieces and often adding a filler material to form a strong bond. There are various types of welding techniques, such as MIG (Metal Inert Gas), TIG (Tungsten Inert Gas), and Stick welding, each suited to different applications and materials. The process is commonly used in industries like construction, automotive, and manufacturing to create structural components, machinery, and equipment. Welders must carefully control heat, pressure, and the environment to ensure quality and safety. </p>
                   </div>
                   <div className="col-md-12 col-lg-6">
-                       <img src={image2} className="w-100 p-3 rounded" alt="" />
+                    <div className="d-flex justify-content-center align-items-center">
+                       <img src={image2} className="w-50 shadow rounded" alt="" />
+                    </div>
                   </div>
              </div>
         </div>
         <div className="container my-4">
         <div className="row">
                   <div className="col-md-12 col-lg-6">
-                       <img src={image3} className="w-100 p-3 rounded" alt="" />
+                       <img src={image4} className="w-100 p-3 rounded" alt="" />
                   </div>
                   <div className="col-md-12 col-lg-6">
-                      <h2 className="text-style text-color brand-font">Thermodynamics and Heat Transfer</h2>
-                       <p>Thermodynamics plays a central role in mechanical engineering, 
-                         particularly in systems like engines, power plants, and refrigeration. 
-                         Mechanical engineers analyze energy conversion processes, ensuring 
-                         that systems efficiently use fuel, reduce waste, and meet performance goals. 
-                         Understanding heat transfer (conduction, convection, and radiation) is 
-                         key to optimizing these systems, making them energy-efficient 
-                         and environmentally friendly.</p>
+                      <h2 className="text-style text-color brand-font">Electric work</h2>
+                       <p className="brand-font">Electric work on a lorry involves the installation, maintenance, and repair of electrical systems within the vehicle. This includes the wiring of lights, indicators, and brake systems to ensure proper functionality. Technicians also work on the truck’s battery, alternator, and starter motor to maintain power flow and start-up reliability. Electric work often includes diagnosing faults in the electrical circuit using specialized tools like multimeters. Repairing or replacing damaged wiring, fuses, and relays is common to prevent short circuits or power loss. Additionally, the electrical systems of modern lorries, including onboard computers and sensors, require attention for optimal performance. Electricians also ensure the proper connection of auxiliary equipment such as air conditioning or in-cabin electronics. They are responsible for ensuring safety features like reverse alarms and lighting systems are working correctly.</p>
                   </div>
              </div>
         </div>
@@ -92,18 +86,13 @@ const Logistics = () => {
                   <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
                       <div>
                           
-                      <h2 className="text-style text-color">Control Systems and Automation</h2>
-                     <p>Mechanical engineers design control systems that regulate mechanical 
-                         processes in machines and systems. This includes feedback 
-                         loops, sensors, and actuators used in everything from 
-                         robotics to HVAC systems. With the rise of automation and 
-                         robotics, mechanical engineers are increasingly involved in 
-                         developing advanced systems that improve manufacturing 
-                         efficiency, precision, and safety.</p>
+                      <h2 className="text-style text-color">Water Service&apos;S</h2>
+                     <p className="brand-font">
+                     Water service work involves the installation, maintenance, and repair of systems that deliver water to homes, businesses, and other facilities. It includes tasks like laying water pipes, connecting them to municipal or private water sources, and ensuring proper flow and pressure. Technicians also handle the installation of water meters and valves, along with addressing issues like leaks, blockages, and broken pipes. Regular inspections are performed to ensure water quality and system efficiency. Emergency repairs are made as needed to restore service. Workers must follow safety protocols and local regulations while handling tools and equipment. Water service professionals also test and monitor systems for potential risks, including contamination. </p>
                       </div>
                   </div>
                   <div className="col-md-12 col-lg-6">
-                       <img src={truckGif} className="w-100 p-3 rounded" alt="" />
+                       <img src={image3} className="w-75 shadow p-1 rounded" alt="" />
                   </div>
              </div>
         </div>

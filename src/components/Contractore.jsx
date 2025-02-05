@@ -5,8 +5,17 @@ import image1 from "../assets/contractor/image-1.jpg";
 import image2 from "../assets/contractor/image-2.jpg";
 import image3 from "../assets/contractor/image-3.jpg";
 import image4 from "../assets/contractor/image-4.jpg";
+// icons
+import { IoCheckmarkCircle } from "react-icons/io5";
+import { useEffect } from 'react';
 
 const Contractore = () => {
+        useEffect(()=>{
+          function getRefresh(){
+            window.scrollTo(0, 0);
+        }
+        getRefresh()
+       },[]) 
   return (
     <div>
         <div className="contractor-banner d-flex justify-content-center align-items-center">
@@ -67,16 +76,16 @@ const Contractore = () => {
                                  <div className="col-md-12 col-lg-6">
                                      <h2 className='text-center py-3 text-text brand-font'>Our Team Work</h2>
                                      <ul>
-                                         <li><strong>Expertise & Experience:</strong> Proven track record in delivering high-quality contractor services.</li>
-                                         <li><strong>Tailored Solutions:</strong> Customized approaches to meet your unique needs.</li>
-                                         <li><strong>Timely Delivery:</strong> Commitment to completing projects on schedule.</li>
-                                         <li><strong>Quality Materials:</strong> Use of durable and reliable materials.</li>
-                                         <li><strong>Affordable Pricing:</strong> Competitive rates with no hidden costs.</li>
-                                         <li><strong>Professional Team:</strong> Skilled and dedicated workforce.</li>
-                                         <li><strong>Transparency:</strong> Open communication throughout the project.</li>
-                                         <li><strong>Comprehensive Services:</strong> One-stop solution for all contracting needs.</li>
-                                         <li><strong>Strong Reputation:</strong> Trusted by clients for excellence and reliability.</li>
-                                         <li><strong>Safety First:</strong> Adherence to strict safety standards.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Expertise & Experience:</strong> Proven track record in delivering high-quality contractor services.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Tailored Solutions:</strong> Customized approaches to meet your unique needs.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Timely Delivery:</strong> Commitment to completing projects on schedule.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Quality Materials:</strong> Use of durable and reliable materials.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Affordable Pricing:</strong> Competitive rates with no hidden costs.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Professional Team:</strong> Skilled and dedicated workforce.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Transparency:</strong> Open communication throughout the project.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Comprehensive Services:</strong> One-stop solution for all contracting needs.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Strong Reputation:</strong> Trusted by clients for excellence and reliability.</li>
+                                         <li className='py-1 brand-font'><IoCheckmarkCircle className='h4 text-success' /> <strong>Safety First:</strong> Adherence to strict safety standards.</li>
                                      </ul>
                                  </div>
                            </div>

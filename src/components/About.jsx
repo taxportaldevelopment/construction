@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 // image
-import introImg from "../assets/about/about-intro.png"
+import introImg from "../assets/about/about-intro.png";
+import teamDiscuss from "../assets/about/team-discuss.png"; 
 import Loading from './layout/Loading';
 import userProfile from "../assets/about/User-Profile-PNG.png"
+// icons
+import { IoCheckmarkCircle } from "react-icons/io5";
 const About = () => {
 
     const [loading,setLoading] = useState(false);
@@ -10,6 +13,13 @@ const About = () => {
     setTimeout(()=>{
           setLoading(true)
     },3000)
+
+    useEffect(()=>{
+     function getRefresh(){
+       window.scrollTo(0, 0);
+   }
+   getRefresh()
+  },[]) 
 
   return (
   
@@ -29,20 +39,21 @@ const About = () => {
              </div>
         </div>
         {/* about intro */}
-        <div className="about-intro text-white mt-2">
-                              <h1 className='py-3 text-center brand-font fw-bold'>About Us</h1>
+        <div className="about-intro  mt-2">
+                              <h1 className='py-3 text-center brand-font fw-bold text-color'>About Us</h1>
                               <p className=' text-center h5'>WE ARE THE LEADERS IN THE ROAD WORKS SECTOR IN THE STATE OF TAMIL NADU <strong>CONSTRUCTION INDUSTRY!</strong></p>
               <div className="about-section container p-5">
                    <div className="row">
                        <div className="col-md-12 col-lg-6">
-                             <div className='p-4'>
-                             <img src={introImg} className='w-100' alt="" />
+                             <div className='p-4 '>
+                             <img src={teamDiscuss} className='w-75 bg-white p-3 border' alt="" />
                              </div>
                        </div>
-                       <div className="col-md-12 col-lg-6">
-                            <p>Our Company was incorporated in the year 2012 by Mr. J.Vivek as a civil engineering infrastructure construction organization. With his sharp personality and interest for brilliance, the Company has developed by a wide margin and effectively executed numerous historic point foundation extends in the fields like Roads, Buildings, Irrigation, site development, logistics and many more.</p>
-                           <p>The visionary mind and main thrust behind the development of Boson Infra India Private Limited is Mr.J.vivek, an enthusiastic, new age business person who has possessed the capacity to make incredible progress in setting up, building and building up the organization. He holds his Master in administration</p>
-                           <p>BOSON is occupied with the execution of civil engineering projects. The Company gives incorporated designing,integrated engineering, procurement and construction (EPC) services for civil construction and infrastructure sector projects</p>                       </div>
+                       <div className="col-md-12 col-lg-6 brand-font">
+                           <p>Welcome to <strong>Perumal</strong> Construction and Metro Water Works! Established in 2016, we are a leading provider of construction and water management services. With a strong foundation built on trust, quality, and expertise, we specialize in residential, commercial, and industrial projects, as well as the installation and maintenance of metro water systems.</p>
+                           <p>Our mission is to deliver top-notch, reliable, and sustainable solutions to our clients. We focus on creating spaces that are not only functional but also contribute to a better quality of life. Whether it's building homes, offices, or infrastructure, or managing complex water systems, we approach each project with precision and dedication.</p>
+                           <p>With a team of highly skilled professionals, we bring innovative solutions to every challenge, ensuring that all work is completed on time, within budget, and to the highest standards. At Perumal Construction and Metro Water Works, we are committed to exceeding your expectations and helping you achieve your goals, one project at a time.</p>
+                      </div>
                    </div>
               </div>
         </div>
@@ -61,9 +72,9 @@ const About = () => {
                                     <div className="senior-image d-flex justify-content-center">
                                            <img src={userProfile} height={100} alt="" />
                                     </div>
-                                    <div className="senior-team-content">
-                                         <h6 className='text-center py-1'>Mr.Ramesh</h6>
-                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p>
+                                    <div className="senior-team-content py-5">
+                                         {/* <h6 className='text-center py-1'>Mr.Ramesh</h6>
+                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p> */}
                                     </div>
                                </div>
                          </div>
@@ -74,9 +85,9 @@ const About = () => {
                                     <div className="senior-image d-flex justify-content-center">
                                            <img src={userProfile} height={100} alt="" />
                                     </div>
-                                    <div className="senior-team-content">
-                                         <h6 className='text-center py-1'>Mr.Ramesh</h6>
-                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p>
+                                    <div className="senior-team-content py-5">
+                                         {/* <h6 className='text-center py-1'>Mr.Ramesh</h6>
+                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p> */}
                                     </div>
                                </div>
                          </div>
@@ -87,15 +98,15 @@ const About = () => {
                                     <div className="senior-image d-flex justify-content-center">
                                            <img src={userProfile} height={100} alt="" />
                                     </div>
-                                    <div className="senior-team-content">
-                                         <h6 className='text-center py-1'>Mr.Ramesh</h6>
-                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p>
+                                    <div className="senior-team-content py-5">
+                                         {/* <h6 className='text-center py-1'>Mr.Ramesh</h6>
+                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p> */}
                                     </div>
                                </div>
                          </div>
                     </div>
                </div> 
-               <div className='p-4 brand-font'>
+               <div className='p-2 brand-font'>
                     <p>
                     Construction work refers to the process of building, altering, repairing, or demolishing
                      structures and infrastructure. It involves a wide range of activities and tasks that can
@@ -104,11 +115,11 @@ const About = () => {
                       and construction laborers. The work can be divided into several phases, including:</p>
                       {/* list */}
                       <ul>
-                         <li className='py-1'><strong>Planning and Design:</strong> This stage involves creating blueprints, obtaining permits, and setting budgets for the project.</li>
-                         <li className='py-1'><strong>Site Preparation:</strong> This includes clearing the land, excavating, and laying foundations.</li>
-                         <li className='py-1'><strong>Building and Construction:</strong> This is the core stage where the structure is built. It may involve framing, electrical work, plumbing, roofing, and other specialized trades.</li>
-                         <li className='py-1'><strong>Finishing:</strong> This includes tasks like painting, flooring, installing fixtures, and making final adjustments.</li>
-                         <li className='py-1'><strong>Inspection and Handover:</strong> Ensuring the structure meets safety and quality standards before being handed over to the owner or client.</li>
+                         <li className='py-1'><IoCheckmarkCircle className='h4 text-success' /> <strong>Planning and Design:</strong> This stage involves creating blueprints, obtaining permits, and setting budgets for the project.</li>
+                         <li className='py-1'><IoCheckmarkCircle className='h4 text-success' /> <strong>Site Preparation:</strong> This includes clearing the land, excavating, and laying foundations.</li>
+                         <li className='py-1'><IoCheckmarkCircle className='h4 text-success' /> <strong>Building and Construction:</strong> This is the core stage where the structure is built. It may involve framing, electrical work, plumbing, roofing, and other specialized trades.</li>
+                         <li className='py-1'><IoCheckmarkCircle className='h4 text-success' /> <strong>Finishing:</strong> This includes tasks like painting, flooring, installing fixtures, and making final adjustments.</li>
+                         <li className='py-1'><IoCheckmarkCircle className='h4 text-success' /> <strong>Inspection and Handover:</strong> Ensuring the structure meets safety and quality standards before being handed over to the owner or client.</li>
                       </ul>
                       <p>Construction work can apply to various types of projects, 
                          including residential homes, commercial buildings, roads, 

@@ -11,7 +11,14 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { MdOutlineMyLocation } from "react-icons/md";
+import { useEffect } from "react";
 const Career = () => {
+        useEffect(()=>{
+          function getRefresh(){
+            window.scrollTo(0, 0);
+        }
+        getRefresh()
+       },[]) 
   return (
     <div>
         <div className="career-section">
@@ -31,7 +38,7 @@ const Career = () => {
                          greatness without dismissing the methods being utilized, 
                          Boson infra is the opportune place for you.</p> 
 
-                      <div className="form-submit">
+                      {/* <div className="form-submit">
 
                           <form>
                               <div className="row p-4 rounded bg-secondary">
@@ -68,7 +75,7 @@ const Career = () => {
                                   </div>
                               </div>
                           </form>
-                     </div>     
+                     </div>      */}
                 </div>
                 {/* details */}
                 <div className="career-more">
@@ -88,9 +95,6 @@ const Career = () => {
                                      <span className="opacity" ><FaBriefcase className="h4 p-1 " /> Full Time</span><br />
                                      <span className="opacity" ><IoLocationSharp className="h4 p-1 " />Chennai</span><br />
                                      <span className="opacity" ><FaRegCalendarAlt className="h4 p-1 " />Posted 7 years ago</span><br />
-                                     <p className="py-2">Boson Infra is currently seeking to hire Sr. 
-                                        Quantity Surveyor (Civil) to be based at Chennai. 
-                                        The Quantity Surveyor will...</p>
                                  </div>
                            </div>
                      </div>
@@ -108,9 +112,6 @@ const Career = () => {
                                      <span className="opacity"><FaBriefcase className="h4 p-1" /> Full Time</span><br />
                                      <span className="opacity"><IoLocationSharp className="h4 p-1" />Chennai</span><br />
                                      <span className="opacity"><FaRegCalendarAlt className="h4 p-1" />Posted 7 years ago</span><br />
-                                     <p className="py-2">Diploma / B.E – civil engineers needed with good 
-                                        relevant experience in Construction & Real Estate. 
-                                        Particularly in Roads Work...</p>
                                  </div>
                            </div>
                      </div>
@@ -128,9 +129,6 @@ const Career = () => {
                                      <span className="opacity"><FaBriefcase className="h4 p-1" /> Full Time</span><br />
                                      <span className="opacity"><IoLocationSharp className="h4 p-1" />Chennai</span><br />
                                      <span className="opacity"><FaRegCalendarAlt className="h4 p-1" />Posted 7 years ago</span><br />
-                                     <p className="py-2">We would like to hire an Electrician to join our team. 
-                                        You will be responsible for installing and 
-                                            repairing complex...</p>
                                  </div>
                            </div>
                      </div>
@@ -148,9 +146,6 @@ const Career = () => {
                                      <span className="opacity"><FaBriefcase className="h4 p-1" /> Full Time</span><br />
                                      <span className="opacity"><IoLocationSharp className="h4 p-1" />Chennai</span><br />
                                      <span className="opacity"><FaRegCalendarAlt className="h4 p-1" />Posted 7 years ago</span><br />
-                                     <p className="py-2">We would like to hire an Electrician to join our team. 
-                                        You will be responsible for installing and 
-                                            repairing complex...</p>
                                  </div>
                            </div>
                      </div>
@@ -162,7 +157,7 @@ const Career = () => {
                  <div className="container-fluid career-more">
                <div className="container p-4">
 
-                     <h3 className="text-center opacity text-white py-5 brand-font">Please submit your resume for future consideration. We will 
+                     <h3 className="text-center opacity text-white py-5 brand-font">Please submit your field for future consideration. We will 
                         certainly keep you in mind and contact you if a job becomes available ...
                          Drop files here ...</h3>
                          <div className="row">
@@ -253,10 +248,10 @@ const Career = () => {
                                                          </div>
                                                    </div>
                                               </div>
-                                              <div className="form-group">
+                                              {/* <div className="form-group">
                                                     <label htmlFor="resume" className="opacity py-2 fw-bold">Your File</label>
                                                     <input type="file" className="form-control" />
-                                              </div>
+                                              </div> */}
                                               <div className="form-group my-2">
                                                    <textarea className="form-control p-2 fw-bold" placeholder="Message...." name="" id="" cols="30" rows="4"></textarea>
                                               </div>

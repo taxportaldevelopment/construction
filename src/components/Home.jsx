@@ -1,4 +1,4 @@
-import{  useState } from 'react';
+import{  useEffect, useState } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Typewriter from "typewriter-effect"
@@ -11,28 +11,27 @@ import { FcElectricalSensor } from "react-icons/fc";
 import { PiBuildingApartmentLight } from "react-icons/pi";
 import { PiBuildings } from "react-icons/pi";
 import { GiMechanicalArm } from "react-icons/gi";
-import { FaBuilding } from "react-icons/fa";
+import { FaHandHoldingWater } from "react-icons/fa";
 import { GrProjects } from "react-icons/gr";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { GiTrophyCup } from "react-icons/gi";
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { BiSolidBuildingHouse } from "react-icons/bi";
-import { BsEmojiSmile } from "react-icons/bs";
 import { FaHandPointRight } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
 // counter
 import CountUp from 'react-countup';
 import Loading from './layout/Loading';
 // images client
-import client1 from "../assets/our-client/client-1.png";
-import client2 from "../assets/our-client/client-2.png";
-import client3 from "../assets/our-client/client-3.png";
-import client4 from "../assets/our-client/client-4.png";
-import client5 from "../assets/our-client/client-5.png";
-import client6 from "../assets/our-client/client-6.png";
-import client7 from "../assets/our-client/client-7.png";
-import client8 from "../assets/our-client/client-8.png";
-import client9 from "../assets/our-client/client-9.png";
+// import client1 from "../assets/our-client/client-1.png";
+// import client2 from "../assets/our-client/client-2.png";
+// import client3 from "../assets/our-client/client-3.png";
+// import client4 from "../assets/our-client/client-4.png";
+// import client5 from "../assets/our-client/client-5.png";
+// import client6 from "../assets/our-client/client-6.png";
+// import client7 from "../assets/our-client/client-7.png";
+// import client8 from "../assets/our-client/client-8.png";
+// import client9 from "../assets/our-client/client-9.png";
 // images
 import image1 from "../assets/road-work/img/slider-1.png";
 import image2 from "../assets/road-work/img/slider-2.jpeg";
@@ -42,11 +41,25 @@ import image5 from "../assets/road-work/img/slider-5.jpg";
 import image6 from "../assets/road-work/img/slider-6.jpg";
 import image7 from "../assets/road-work/img/slider-7.jpg";
 import image8 from "../assets/road-work/img/slider-8.jpg";
-import imageBottom from "../assets/road-work/road-work-bottom.jpg";
 import proessProject1 from "../assets/home/img/img-1.png";
 import proessProject2 from "../assets/home/img/img-2.png";
 import proessProject3 from "../assets/home/img/img-3.png";
+// gallery images
+import gallery1 from "../assets/home/gallery/gallery-1.jpeg";
+import gallery2 from "../assets/home/gallery/gallery-2.jpeg";
+import gallery3 from "../assets/home/gallery/gallery-3.jpeg";
+import gallery4 from "../assets/home/gallery/gallery-4.jpeg";
+import gallery5 from "../assets/home/gallery/gallery-5.jpeg";
+import gallery6 from "../assets/home/gallery/gallery-6.jpeg";
+import gallery7 from "../assets/home/gallery/gallery-7.jpeg";
+import gallery8 from "../assets/home/gallery/gallery-8.jpeg";
+import gallery9 from "../assets/home/gallery/gallery-9.jpeg";
+import gallery10 from "../assets/home/gallery/gallery-10.jpeg";
+import { NavLink } from 'react-router-dom';
 const Home = () => {
+   const [gallery,setGallery] = useState([gallery1,gallery2,gallery3,gallery4,gallery5,
+    gallery6,gallery7,gallery8,gallery9,gallery10]);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -64,16 +77,21 @@ const Home = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
-    const [ourClient,setOurClient] = useState([client1,client2,client3,client4,client5,client6,client7
-      ,client8,client9
-    ])
+    // const [ourClient,setOurClient] = useState([client1,client2,client3,client4,client5,client6,client7
+    //   ,client8,client9
+    // ])
     const [loading,setLoading] = useState(false);
 
     setTimeout(()=>{
           setLoading(true)  
     },1000)
     
-
+    useEffect(()=>{
+      function getRefresh(){
+        window.scrollTo(0, 0);
+    }
+    getRefresh()
+   },[]) 
 
   return (
     <div>
@@ -160,7 +178,9 @@ const Home = () => {
                                  <li className='py-2'><span className='text-text fw-bold'>Innovative Techniques : </span> Utilization of modern tools and sustainable practices to deliver cost-effective and durable solutions.</li>
                               </ul>
                           </div>
+                           <NavLink to={"/construction-work"}>
                           <button className="button-85" role="button">Get Start <IoIosArrowRoundForward /></button>
+                           </NavLink>
                     </div>
               </div>
 
@@ -275,6 +295,22 @@ const Home = () => {
                    </div>
                </div>
         </div>
+        {/* gallery start */}
+           <div className="container-fluid my-4 py-3">
+                 <h1 className='text-center py-3'>Gallery</h1>
+              <div className='d-flex justify-content-center'>
+             <div className="gallery-section">
+                  {gallery.map((items,index)=>{
+                     return(
+                        <div className="child" key={index}>
+                             <img src={items} className='w-100' alt="" />
+                        </div>
+                     )
+                  })}
+             </div>
+              </div>   
+           </div>
+        {/* gallery end */}
          {/* project-process start */}
              <div className="project-process py-4 my-3 container">
                   <div>
@@ -319,17 +355,17 @@ const Home = () => {
                <div className="col-md-3 col-sm-4 col-xs-6">
                    <div>
                      <div className="d-flex justify-content-center">
-                        <FaBuilding className='text-warning h2' />
+                        <FaHandHoldingWater className='text-warning h2' />
                      </div>
                      <div className='d-flex justify-content-center text-white'>
                      <h2>
             
                      <CountUp
-                      end={100}
+                      end={14}
                         enableScrollSpy={true}/>
                      </h2>
                    </div>
-                     <h6 className='text-white text-center'>No. Of Sites</h6>
+                     <h6 className='text-white text-center'>Metro Water</h6>
 
                    </div>
                </div>
@@ -342,7 +378,7 @@ const Home = () => {
                      <h2>
             
                      <CountUp
-                      end={100}
+                      end={738}
                         enableScrollSpy={true}/>
                      </h2>
                    </div>
@@ -359,7 +395,7 @@ const Home = () => {
                      <h2>
             
                      <CountUp
-                      end={100}
+                      end={35}
                         enableScrollSpy={true}/>
                      </h2>
                    </div>
@@ -376,11 +412,11 @@ const Home = () => {
                      <h2>
             
                      <CountUp
-                      end={100}
+                      end={27}
                         enableScrollSpy={true}/>
                      </h2>
                    </div>
-                     <h6 className='text-white text-center'>Aggregate Experience</h6>
+                     <h6 className='text-white text-center'>Aggregate Experience Yaer</h6>
 
                    </div>
                </div>
@@ -390,7 +426,7 @@ const Home = () => {
 
         </div>
         {/* our client */}
-        <div className="container">
+        {/* <div className="container">
            <h1 className='py-3 text-center text-style text-warning brand-font'>OUR HAPPY CLIENT <BsEmojiSmile /></h1>
         <div className="row our-client p-4">
             {ourClient.map((items,index)=>(
@@ -401,11 +437,11 @@ const Home = () => {
             ))}
         </div>
 
-        </div>
+        </div> */}
                {/* slider-image-carousel */}
-                 <div className="container-fluid bramd-bg mt-2">
+                 <div className="container-fluid mt-5">
                  <div className="road-carousel container py-5">
-                   <h2 className="text-center py-2 text-white">OUR WORKS</h2>
+                   <h2 className="text-center py-2 text-color">OUR WORKS</h2>
                <Carousel
                     responsive={responsive}
                     infinite={true}

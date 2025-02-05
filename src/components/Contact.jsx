@@ -4,7 +4,22 @@ import image1 from "../assets/contact/Service 24_7-rafiki.png"
 import image2 from "../assets/contact/user-contact.png";
 import { MdOutlineMail } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
+import { IoCopyOutline } from "react-icons/io5";
+import { useEffect, useState } from "react";
 const Contact = () => {
+
+   const [text,setText] = useState("sriperumalenterprises19@gmail.com")
+
+   function EmailCopy(){
+       navigator.clipboard.writeText(text)
+       alert("Email copied go to Gmail")
+   }
+    useEffect(()=>{
+      function getRefresh(){
+        window.scrollTo(0, 0);
+    }
+    getRefresh()
+   },[]) 
   return (
     <div>
         <div className="contact-section">
@@ -18,29 +33,25 @@ const Contact = () => {
               <div className="container">
                     <div className="row">
                           <div className="col-md-12 col-lg-6 p-3">
-                             <img src={image1} className="w-100"  alt="" />
+                             <img src={image1} className="w-75"  alt="" />
                           </div>
                           <div className="col-md-12 col-lg-6 p-3 d-flex justify-content-center align-items-center">
                                 <div>
-
-                                <h1 className="brand-font text-style mt-3">Contact Us</h1>
-                                <p>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                  Optio repellat, officia accusantium harum voluptatum sint 
-                                  fugit aspernatur odio voluptates adipisci!
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                  Optio repellat, officia accusantium harum voluptatum sint 
-                                  fugit aspernatur odio voluptates adipisci!
-                                  </p>
-                                  <p>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                  Optio repellat, officia accusantium harum voluptatum sint 
-                                  fugit aspernatur odio voluptates adipisci!
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                  Optio repellat, officia accusantium harum voluptatum sint 
-                                  fugit aspernatur odio voluptates adipisci!
-                                  </p>
-
+                                <h2 className="brand-font text-style text-color mt-3">Contact Us</h2>
+                                  <div className="email">
+                                     <p className="text-warning h5 py-2"><IoCopyOutline className="text-dark" onClick={EmailCopy} role="button" /> {text}</p>
+                                  </div>
+                                  <div className="address">
+                                      <h6>Address</h6>
+                                      <p>No.67 C-Block Ezhil Nagar Perumbakkam Pin : Chennai 600100</p>
+                                  </div>
+                                  <div className="phone">
+                                      <h6>Contact US</h6>
+                                      <p>(+ 91) 7359273084 <br /> (+ 91) 44 3140 2500</p>
+                                  </div>
+                                  <div>
+                                      <p className="opacity">At Sri Perumal Construction, we understand that building projects can arise at any time. That’s why we’re available 24/7 to assist you with your construction needs. Whether it's an urgent repair, project inquiry, or expert advice, our dedicated team is just a call away, ready to provide reliable solutions, day or night.</p>
+                                  </div>
                                 </div>
                           </div>
                     </div>

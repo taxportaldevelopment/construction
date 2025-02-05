@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import constructionImg from "../assets/construction-section.jpeg";
 import works from "../assets/conGif.gif"
 // import ourWork1 from "../assets/our-work-1.jpg";
@@ -9,7 +9,7 @@ import works from "../assets/conGif.gif"
 import { IoMdSettings } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Loading from "./layout/Loading";
 import { IoIosArrowRoundForward } from "react-icons/io";
 // image
@@ -27,7 +27,13 @@ const Construction = () => {
      setTimeout(()=>{
            setLoading(true)
      },3000)
-
+    
+     useEffect(()=>{
+          function getRefresh(){
+               window.scrollTo(0, 0);
+           }
+           getRefresh()
+     },[])
   return (
     <div>
 
@@ -55,8 +61,8 @@ const Construction = () => {
                           <h1 className="py-3 text-color brand-font">CONTRACTOR</h1>
                           <div>
                                <p className="py-2 brand-font">&quot;Pandian is an experienced and skilled contractor offering a wide range of services in construction and home improvement. With years of hands-on expertise, Pandian is known for delivering high-quality results on time and within budget. Whether you need minor repairs or large-scale construction projects, Pandian provides professional and reliable services.</p>
-                               <button className="button-85 d-flex justify-content-evenly align-items-center" role="button"><span>Contact Us</span> <span className="h5"><IoIosArrowRoundForward /></span></button>
-                          </div>
+                                <NavLink to={"/contact"}><button className="button-85 d-flex justify-content-evenly align-items-center" role="button"><span>Contact Us</span> <span className="h5"><IoIosArrowRoundForward /></span></button> </NavLink>
+                           </div>
                        </div>
                   </div>
               </div>
