@@ -1,22 +1,14 @@
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 // image
-import image1 from "../assets/logistics/mechanical/image-1.jpg"
-import image2 from "../assets/logistics/mechanical/image-2.jpeg"
-import image3 from "../assets/logistics/mechanical/image-3.jpeg"
-import image4 from "../assets/logistics/mechanical/image-4.jpg"
-import truckGif from "../assets/logistics/mechanical-set.gif"
+import image1 from "../assets/logistics/mechanical/image-1.jpg";
+import image2 from "../assets/logistics/mechanical/image-2.jpeg";
+import image3 from "../assets/logistics/mechanical/image-3.jpeg";
+import image4 from "../assets/logistics/mechanical/image-4.jpg";
 // icons
-import { IoSettingsOutline } from "react-icons/io5"; 
-import { useEffect, useState } from "react"
-import Loading from "./layout/Loading"
-import Service from "./compo/Service"
+import { useEffect} from "react";
+import Service from "./compo/Service";
 const Logistics = () => {
 
-     const [loading,setLoading] = useState(false);
-
-     setTimeout(()=>{
-           setLoading(true)
-     },3000)
          useEffect(()=>{
            function getRefresh(){
              window.scrollTo(0, 0);
@@ -25,7 +17,6 @@ const Logistics = () => {
         },[]) 
   return (
     <div>
-       {loading?
        <div className="scroll-banner-scroll">
         <div className="logistics-banner d-flex justify-content-center align-items-center">
         <div>
@@ -34,11 +25,11 @@ const Logistics = () => {
             </div>
         </div>
         {/* logistics intro */}
-         <div className="intro-secriob container p-3">
+         <div data-aos="fade-up" className="intro-secriob container p-3" > 
              <h2 className="text-center py-3 brand-font text-color">Overview of Mechanical Engineering</h2>
              <p>Mechanical Engineering is one of the oldest and broadest branches of engineering. It focuses on the design, analysis, manufacturing, and maintenance of mechanical systems. Mechanical engineers work with a wide range of industries, from aerospace to automotive, energy to robotics, and even manufacturing processes. They apply principles of physics, mathematics, and material science to solve problems and improve technology.</p>
          </div>
-        <div className="container mt-4">
+        <div data-aos="fade-down" className="container mt-4">
         <div className="row">
                   <div className="col-md-12 col-lg-6 p-2">
                        <img src={image1} className="w-100 p-3 rounded" alt="" />
@@ -57,7 +48,7 @@ const Logistics = () => {
                   </div>
              </div>
         </div>
-        <div className="container my-4">
+        <div data-aos="fade-right" className="container my-4">
         <div className="row">
                   <div className="col-md-12 col-lg-6">
                       <h2 className="text-style text-color brand-font">Welding Work&apos;S</h2>
@@ -70,7 +61,7 @@ const Logistics = () => {
                   </div>
              </div>
         </div>
-        <div className="container my-4">
+        <div data-aos="fade-up-right" className="container my-4">
         <div className="row">
                   <div className="col-md-12 col-lg-6">
                        <img src={image4} className="w-100 p-3 rounded" alt="" />
@@ -81,7 +72,7 @@ const Logistics = () => {
                   </div>
              </div>
         </div>
-        <div className="container py-3">
+        <div data-aos="fade-up-left" className="container py-3">
         <div className="row">
                   <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
                       <div>
@@ -97,9 +88,7 @@ const Logistics = () => {
              </div>
         </div>
            <Service/>
-         </div>:<Loading/>   
-       
-     }
+         </div>
     </div>
   )
 }

@@ -6,7 +6,6 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
-import img1 from "../../assets/Construction-rafiki.png"
 import { NavLink } from "react-router-dom";
 const Footer = () => {
       const currentYear = new Date().getFullYear()
@@ -26,7 +25,7 @@ const Footer = () => {
                      <div className="col-md-12 col-lg-3 opacity">  
                            <h5 className="py-3 opacity border-bottom text-style">QUICK LINKS</h5>
                            <ul>
-                               <NavLink to={"/construction"} className={"text-white"}><li><MdKeyboardArrowRight />Home</li></NavLink><br />
+                               <NavLink to={"/"} className={"text-white"}><li><MdKeyboardArrowRight />Home</li></NavLink><br />
                                <NavLink to={"/about"} className={"text-white"}><li><MdKeyboardArrowRight />About</li></NavLink><br />
                                <NavLink to={"/career"} className={"text-white"}><li><MdKeyboardArrowRight />Career</li></NavLink><br />
                                <NavLink to={"/contact"} className={"text-white"}><li><MdKeyboardArrowRight />Contact</li></NavLink><br />
@@ -46,7 +45,7 @@ const Footer = () => {
                           <h5 className="py-3 border-bottom text-style">HEAD OFFICE</h5>
                           <span><IoLocationOutline className="h4" /></span>
                           <p>No.67 C-Block Ezhil Nagar Perumbakkam Pin : Chennai 600100</p>
-                          <span><IoIosCall  className="px-1 h2"/>+ 91 44 3140 2500 <br /> <span><IoIosCall  className="px-1 h2"/>+ +91 73582 73084</span> </span>
+                          <span><IoIosCall  className="px-1 h2"/>+ 91 44 3140 2500 <br /> <span><IoIosCall  className="px-1 h2"/>+ 91 73582 73084</span> </span>
                              
                           <p><MdOutlineMail className="px-1 h2" /> sriperumalenterprises19@gmail.com</p>
                      </div>

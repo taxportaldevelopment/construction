@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 /* scroll-banner-scroll */
 .scroll-banner-scroll{
     background:linear-gradient(to right,#e6e3e3cb,#e0dedec9) , url(./assets/logistics/scroll-banner.jpg) no-repeat;
@@ -64,8 +67,8 @@
 /* home-section-banner */
 .home-section-banner{
     height: 67vh;
-     background:linear-gradient(to right,#0000007b,#000000c7,#000000c7,#00000082) ,url(./assets/contruction-banner.png) no-repeat;
-     background-size:cover;
+    background:linear-gradient(to right,#0000007b,#000000c7,#000000c7,#00000082) ,url(./assets/contruction-banner.png) no-repeat;
+    background-size:cover;
 }
 
 /* perfect-layout */
@@ -352,6 +355,18 @@
     height: 70vh;
     background:linear-gradient(to right,#1f1818a5,#2c2323b2,#ffffffe6) ,url(./assets/contact/Contact-us-banner.jpg);
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* media */
 @media screen  and (max-width:768px){
     .perfect-layout{

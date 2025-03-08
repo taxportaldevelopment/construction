@@ -224,7 +224,23 @@
   border-radius: 10px;
 }
 
-
+/* water-gallery */
+.water-section-gallery{
+  background:url(./assets/water/img/water-bg-line.png),linear-gradient(to top,#8b41c8,#87255e);
+  background-size:cover;
+}
+.water-gallery img{
+    transform:rotate(10deg);
+    transition: all 1s ease-in;
+    border: 5px dashed rgb(255, 255, 255);
+    background: #000;
+}
+.water-gallery img:hover{
+  transform:rotate(0);
+}
+.water-gallery img:hover{
+  transform:scale(1.1);
+}
 @media screen and (max-width: 768px){
   .triangle-left{
     border-top: 20px solid transparent;
@@ -242,6 +258,9 @@
   /* about-sec-font */
 .about-sec-font{
   font-size: 12px;
+}
+.water-gallery img{
+  border: 2px dashed rgb(255, 255, 255);
 }
   
 }

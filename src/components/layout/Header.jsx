@@ -5,11 +5,11 @@ import {
     NavItem,
     DropDown,
   } from "responsive-navigation";
-  import {Link} from "react-router-dom"
+  import {Link} from "react-router-dom";
+  // brand logo
+import brandLogo from "../../assets/perumal-logo.svg";
 // icons
 import { FaPhone } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
-import { LiaLinkedinIn } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
 
 import { useState } from "react";
@@ -19,7 +19,6 @@ const Header = () => {
      window.onpopstate  = function() {
        let urlSplit = window.location.href.split("/")
       setActive(urlSplit[3])
-      
       return false;
   }
     
@@ -31,15 +30,15 @@ const Header = () => {
               <div>
                    <div>
                        <a href="tel:+91 9940025556" className="text-white "><h6><FaPhone /> +91 73582 73084</h6></a>
-                      <a href="mailto:pandiyanp313@gmail.com" className="text-white ms-lg-3"><h6><MdOutlineMail /> sriperumalenterprises19@gmail.com</h6></a>
+                      <a href="mailto:pandiyanp313@gmail.com" className="text-white ms-lg-3"><h6><MdOutlineMail />sriperumalenterprises19@gmail.com</h6></a>
                       <marquee  direction="right">
                        <span className="brand-font">No.67 C-Block Ezhil Nagar Perumbakkam Pin : Chennai 600100</span></marquee>
                    </div>
 
               </div>
               <div className="d-flex justify-content-between">
-                 <h6 className=" h4 p-1"><FaFacebookF /></h6>
-                 <h6 className=" h4 p-1"><LiaLinkedinIn /></h6>
+                 {/* <h6 className=" h4 p-1"><FaFacebookF /></h6>
+                 <h6 className=" h4 p-1"><LiaLinkedinIn /></h6> */}
               </div>
         </div>
       <Navbar
@@ -50,13 +49,13 @@ const Header = () => {
   }}
 >
   <NavbarBrand>
-    <Link to={"/construction"} onClick={()=>setActive("construction")} className="font-weight-bold" style={{ fontSize: "30px", fontWeight: "700" }}>
-        <h2>LOGO</h2>
+    <Link to={"/"} onClick={()=>setActive("construction")} className="font-weight-bold" style={{ fontSize: "30px", fontWeight: "700" }}>
+        <img src={brandLogo} height={70} alt="" />
     </Link>
   </NavbarBrand>
   <NavbarContent>
     <NavItem>
-      <Link to={"/construction"} onClick={()=>setActive("construction")} style={{color:(active == "construction"?"orangered":"black")}}>Home</Link>
+      <Link to={"/"} onClick={()=>setActive("construction")} style={{color:(active == "construction"?"orangered":"black")}}>Home</Link>
     </NavItem>
     <NavItem>
       <Link  to={"/about"} onClick={()=>setActive("about")} style={{color:(active == "about"?"orangered":"black")}}>About</Link>
@@ -71,9 +70,6 @@ const Header = () => {
       <NavItem>
         <Link onClick={()=>setActive("mechanical")} to={"/mechanical"} style={{color:(active == "mechanical"?"orangered":"black")}} >Mechanical</Link>
       </NavItem>
-      {/* <NavItem>
-           <Link onClick={()=>setActive("electrical")} to={"/electrical"} style={{color:(active == "electrical"?"orangered":"black")}} >Electrical</Link>
-      </NavItem> */}
       <NavItem>
            <Link onClick={()=>setActive("metrowater")} to={"/metrowater"} style={{color:(active == "metrowater"?"orangered":"black")}} >Metro Water</Link>
       </NavItem>

@@ -1,18 +1,12 @@
 import { useState,useEffect } from 'react'
 // image
-import introImg from "../assets/about/about-intro.png";
 import teamDiscuss from "../assets/about/team-discuss.png"; 
 import Loading from './layout/Loading';
-import userProfile from "../assets/about/User-Profile-PNG.png"
+// import userProfile from "../assets/about/User-Profile-PNG.png"
 // icons
 import { IoCheckmarkCircle } from "react-icons/io5";
 const About = () => {
 
-    const [loading,setLoading] = useState(false);
-
-    setTimeout(()=>{
-          setLoading(true)
-    },3000)
 
     useEffect(()=>{
      function getRefresh(){
@@ -24,13 +18,12 @@ const About = () => {
   return (
   
     <div>
-        {
-            loading?
-    <div>
+     <div>
         <div className="about-banner d-flex align-items-center p-4">
-            <div className=" p-3 container-fluid">l
+            <div className=" p-3 container-fluid">
                    <div className="row">
                        <div className="col-md-12 col-lg-5 about-banner-content rounded p-2">   
+                       {/* eslint-disable-next-line react/no-unknown-property */}
                        <marquee behavior="alternate" direction="top"> <q className='text-white d-flex'><h5 className='fw-bold brand-font mx-2 text-color about-sec-font'>PANDIAN CONTRACTOR SERVICE</h5></q> </marquee>
                   <p className='text-white p-2 brand-font'>Pandian, a professional contractor with extensive experience in delivering exceptional construction and project management services. My expertise spans residential, commercial, and infrastructure projects, where I focus on quality, efficiency, and customer satisfaction. With a strong team and modern tools, I ensure every project is executed on time and within budget.</p>
 
@@ -39,7 +32,8 @@ const About = () => {
              </div>
         </div>
         {/* about intro */}
-        <div className="about-intro  mt-2">
+        <div className="about-intro  mt-2" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                               <h1 className='py-3 text-center brand-font fw-bold text-color'>About Us</h1>
                               <p className=' text-center h5'>WE ARE THE LEADERS IN THE ROAD WORKS SECTOR IN THE STATE OF TAMIL NADU <strong>CONSTRUCTION INDUSTRY!</strong></p>
               <div className="about-section container p-5">
@@ -51,7 +45,7 @@ const About = () => {
                        </div>
                        <div className="col-md-12 col-lg-6 brand-font">
                            <p>Welcome to <strong>Perumal</strong> Construction and Metro Water Works! Established in 2016, we are a leading provider of construction and water management services. With a strong foundation built on trust, quality, and expertise, we specialize in residential, commercial, and industrial projects, as well as the installation and maintenance of metro water systems.</p>
-                           <p>Our mission is to deliver top-notch, reliable, and sustainable solutions to our clients. We focus on creating spaces that are not only functional but also contribute to a better quality of life. Whether it's building homes, offices, or infrastructure, or managing complex water systems, we approach each project with precision and dedication.</p>
+                           <p>Our mission is to deliver top-notch, reliable, and sustainable solutions to our clients. We focus on creating spaces that are not only functional but also contribute to a better quality of life. Whether it&apos;s building homes, offices, or infrastructure, or managing complex water systems, we approach each project with precision and dedication.</p>
                            <p>With a team of highly skilled professionals, we bring innovative solutions to every challenge, ensuring that all work is completed on time, within budget, and to the highest standards. At Perumal Construction and Metro Water Works, we are committed to exceeding your expectations and helping you achieve your goals, one project at a time.</p>
                       </div>
                    </div>
@@ -59,53 +53,12 @@ const About = () => {
         </div>
         {/* Our Senior Consultant's team profile */}
          <div>
-          <div className="about-senior-team container my-4">
+          <div className="about-senior-team container my-4 " data-aos="fade-down">
                <div>
-                <h2 className='py-2 text-center text-style text-color brand-font'>Our Senior Consultant&apos;s team profile</h2>
+                <h2 className='py-2 text-center text-style text-color brand-font'>Our Senior Consultant&apos;s</h2>
                 <div className='d-flex justify-content-center pb-3'><div className='title-span-style'></div></div>
                </div>
 
-               <div className="row">
-                    <div className="col-6 col-lg-4 mt-4">
-                         <div className="our-senior-about">
-                               <div className="senior-team">
-                                    <div className="senior-image d-flex justify-content-center">
-                                           <img src={userProfile} height={100} alt="" />
-                                    </div>
-                                    <div className="senior-team-content py-5">
-                                         {/* <h6 className='text-center py-1'>Mr.Ramesh</h6>
-                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p> */}
-                                    </div>
-                               </div>
-                         </div>
-                    </div>
-                    <div className="col-6 col-lg-4 mt-4">
-                         <div className="our-senior-about">
-                               <div className="senior-team">
-                                    <div className="senior-image d-flex justify-content-center">
-                                           <img src={userProfile} height={100} alt="" />
-                                    </div>
-                                    <div className="senior-team-content py-5">
-                                         {/* <h6 className='text-center py-1'>Mr.Ramesh</h6>
-                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p> */}
-                                    </div>
-                               </div>
-                         </div>
-                    </div>
-                    <div className="col-6 col-lg-4 mt-4">
-                         <div className="our-senior-about">
-                               <div className="senior-team">
-                                    <div className="senior-image d-flex justify-content-center">
-                                           <img src={userProfile} height={100} alt="" />
-                                    </div>
-                                    <div className="senior-team-content py-5">
-                                         {/* <h6 className='text-center py-1'>Mr.Ramesh</h6>
-                                         <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, deserunt.</p> */}
-                                    </div>
-                               </div>
-                         </div>
-                    </div>
-               </div> 
                <div className='p-2 brand-font'>
                     <p>
                     Construction work refers to the process of building, altering, repairing, or demolishing
@@ -129,8 +82,7 @@ const About = () => {
           </div>
 
          </div>
-    </div>:<Loading/>
-        }
+    </div>
     </div>
 
   )

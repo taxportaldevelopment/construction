@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom'
-
 // images
 import image1 from "../assets/contractor/image-1.jpg";
 import image2 from "../assets/contractor/image-2.jpg";
@@ -27,7 +26,7 @@ const Contractore = () => {
                 </div>
         </div>
         {/* our-intro */}
-        <div className="contractore-intro py-3 container bg-light">
+        <div className="contractore-intro py-3 container bg-light" data-aos="zoom-in">
                <h1 className='text-center text-color brand-font'>Contractor Work</h1>
                <p className='text-center'>Pandian Contractor specializes in delivering comprehensive construction, renovation, and maintenance services tailored to meet the diverse needs of residential, commercial, and industrial projects. Our expertise spans:</p>
               <div className="row">
@@ -51,7 +50,7 @@ const Contractore = () => {
               </div>
         </div>
         {/* why choose us */}
-         <div className="why-choose">
+         <div className="why-choose" data-aos="zoom-out-up">
               <h2 className='text-center py-3 text-text brand-font'>Why Choose Us?</h2>
               <div className="container">
                   <p>At <strong>Perumal</strong> Contractors, we are dedicated to providing top-notch services that combine expertise, quality, and reliability. With years of experience in the industry, we deliver tailored solutions to meet your unique needs, ensuring every project is handled with precision and professionalism. Our commitment to using high-quality materials, adhering to strict timelines, and maintaining transparent communication sets us apart. Backed by a skilled team and a strong reputation for excellence, we offer comprehensive contractor services at competitive prices. Safety and customer satisfaction are our top priorities, making us the trusted choice for all your contracting needs.</p>
